@@ -1,0 +1,868 @@
+.fadein {
+  opacity: 0.5;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fadein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hover_one:hover{
+  transform: translateY(-1px);
+  transition: all 0.25s ease;
+  color: #111;
+  cursor: pointer;
+}
+.hover_two:hover{
+  transform: translateY(-2px);
+  transition: all 0.25s ease;
+  color: #111;
+  cursor: pointer;
+}
+.hover_three:hover{
+  transform: translateY(-3px);
+  transition: all 0.25s ease;
+  color: #111;
+  cursor: pointer;
+}
+.business_intro_card {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:6rem;
+  gap: 5rem;
+  background: #ffffff;
+  border-radius: 1.6rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 91, 172, 0.06);
+  color: #555;
+}
+.business_intro_left h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #003e7e;
+  line-height: 1.4;
+}
+.business_intro_left p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.business_intro_right {
+  flex: 1;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(0, 91, 172, 0.12);
+}
+
+.business_intro_right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.business_intro_right li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.business_intro_right i {
+  color: #005bac;
+  font-size: 1.4rem;
+  margin-top: 0.15rem;
+}
+.business_card_section{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.business_card_container{
+  width: 80%;
+  display:flex;
+  gap:3rem;
+}
+.business_card{
+  flex:1;
+  background:#fff;
+  border-radius:1.4rem;
+  border:1px solid rgba(0,91,172,0.06);
+  box-shadow:0 10px 26px rgba(0,0,0,0.04);
+  padding:2rem 2rem 2.3rem;
+  position:relative;
+  color:#555;
+}
+.business_tag{
+  position:absolute;
+  top:1.4rem;
+  right:1.6rem;
+  font-size:1.2rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:0.3rem 1.2rem;
+  border-radius:999px;
+  background:#f3f7fc;
+  border:1px solid rgba(0,91,172,0.16);
+}
+.business_tag.import{ color:#005bac; }
+.business_tag.export{ color:#008060; }
+.business_tag.promotion{ color:#c05800; }
+
+.business_card h3{
+  font-size:1.8rem;
+  margin-bottom:0.4rem;
+  color:#222;
+}
+.business_lead{
+  font-size:1.4rem;
+  margin-bottom:0.8rem;
+}
+.business_card ul{
+  list-style:disc;
+  padding-left:1.6rem;
+}
+.business_card li{
+  font-size:1.3rem;
+  margin-bottom:0.3rem;
+}
+.global_network_section{
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.global_network_section .title_container{
+  margin-top: 0;
+}
+.global_map_container{
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+}
+.global_map{
+  width:100%;
+  height:55vh;
+  object-fit:cover;
+  border-radius:1.2rem;
+  box-shadow:0 12px 32px rgba(0,0,0,0.06);
+}
+.global_caption{
+  text-align:center;
+  margin-top:1.5rem;
+  font-size:1.2rem;
+  color:#777;
+}
+.business_flow_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.business_flow_section .title_container{
+  margin-top: 0;
+}
+.flow_step_container{
+  width: 80%;
+  margin: 2rem auto 0;
+  display:flex;
+  gap:1.5rem;
+  padding: 0 1.5rem;
+}
+.flow_step{
+  background:#fff;
+  border-radius:1.2rem;
+  border:1px solid rgba(0,91,172,0.08);
+  padding:1.4rem 1.4rem 1.6rem;
+  box-shadow:0 8px 22px rgba(0,0,0,0.04);
+  color:#555;
+}
+.flow_number{
+  font-size:1.5rem;
+  letter-spacing:0.18em;
+  color:#005bac;
+  margin-bottom:0.3rem;
+}
+.flow_step h3{
+  font-size:1.5rem;
+  margin-bottom:0.4rem;
+  color: #111;
+}
+.flow_step p{
+  font-size:1.2rem;
+  
+}
+.business_cta_inner{
+  width: 80%;
+  margin:0 auto;
+  text-align:center;
+  padding:3rem;
+  border-radius:1.6rem;
+  background:linear-gradient(135deg, #005bac0d, #f5f8ff);
+  border:1px solid rgba(0,91,172,0.16);
+  margin-bottom: 5rem;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+.business_cta_inner h2{
+  font-size:2rem;
+  margin-bottom:0.8rem;
+}
+.business_cta_inner p{
+  font-size:1.4rem;
+  color:#555;
+  margin-bottom:1.4rem;
+}
+.business_cta_button{
+  display:inline-block;
+  padding:0.8rem 3rem;
+  border-radius:999px;
+  border:none;
+  background:#005bac;
+  color:#fff ;
+  font-size:1.4rem;
+  letter-spacing:0.08em;
+  text-decoration:none;
+  transition: opacity 0.5s,box-shadow 0.5s;
+}
+.business_cta_button:hover{
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}       
+.business_bridge_section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.business_bridge_section .title_container {
+  margin-top: 0;
+}
+
+.bridge_panel {
+  width: 80%;
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 3rem 3rem 2.4rem;
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, #005bac0d, #f5f8ff);
+  border: 1px solid rgba(0, 91, 172, 0.16);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.05);
+}
+
+.bridge_row {
+  margin-top: 2rem;
+}
+
+.bridge_row_title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.bridge_row_main {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #005bac;
+}
+
+.bridge_row_sub {
+  font-size: 1.3rem;
+  color: #777;
+}
+
+/* ノード＋矢印の並び */
+.bridge_flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.9rem;
+}
+
+/* ノード（1つ1つの箱） */
+.bridge_node {
+  flex: 1 1 150px;
+  background: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.1rem 0.8rem 1.2rem;
+  text-align: center;
+  border: 1px solid rgba(0, 91, 172, 0.14);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+  color: #555;
+}
+
+.bridge_icon {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #005bac;
+}
+
+.bridge_node_title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #333;
+}
+
+.bridge_node_text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.bridge_arrow {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #005bac;
+  font-size: 1.4rem;
+}
+
+.bridge_note {
+  margin-top: 2.4rem;
+  font-size: 1.2rem;
+  
+  text-align: center;
+  line-height: 1.8;
+}
+
+.pc_only{ display: inline; }
+
+/* =========================================================
+   7) Trade Map Interactive (hotspot / card)
+========================================================= */
+.trade-map{
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+/* Hotspots（真鍮リング風） */
+.hotspot{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: transparent;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 6px rgba(196,170,110,0.18);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.2s;
+}
+.hotspot::after{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(16,36,70,0.95);
+  transform: translate(-50%, -50%);
+}
+.hotspot:hover{
+  box-shadow: 0 0 0 10px rgba(196,170,110,0.3);
+}
+.hotspot:focus-visible{
+  outline: 3px solid rgba(16,36,70,0.35);
+  outline-offset: 4px;
+}
+
+/* Hotspot positions (PC default) */
+.hs-europe{ left:11.05%; top:29.65%; }
+.hs-north-africa{ left:15%; top:42.83%; }
+.hs-west-asia{ left:25.879%; top:49.7%; }
+.hs-central-asia{ left:34.24%; top:42.55%; }
+.hs-se-asia{ left:45.745%; top:57.5618%; }
+.hs-oceania{ left:54.25%; top:87.9%; }
+.hs-north-central-america{ left:81.36%; top:38.8%; }
+.hs-south-america{ left:95.44871%; top:65.323%; }
+
+/* Card (desktop) */
+#tradeMap .port-card{
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: min(540px, calc(100% - 36px));
+  z-index: 4;
+
+  background:
+    radial-gradient(120% 90% at 10% 0%, rgba(255,255,255,0.78), rgba(255,255,255,0) 55%),
+    radial-gradient(120% 90% at 100% 120%, rgba(16,36,70,0.10), rgba(16,36,70,0) 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.88));
+
+  border: 1px solid rgba(16,36,70,0.14);
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+
+  box-shadow:
+    0 24px 60px rgba(0,0,0,0.16),
+    0 6px 18px rgba(0,0,0,0.08),
+    inset 0 0 0 1px rgba(255,255,255,0.40);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  opacity: 0;
+  transform: translateY(12px) scale(0.985);
+  pointer-events: none;
+  transition:
+    opacity .18s ease,
+    transform .22s cubic-bezier(.22,1.15,.36,1);
+}
+#tradeMap .port-card.is-open{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  padding-bottom: 3rem;
+}
+
+#tradeMap .port-close{
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(16,36,70,0.12);
+  background: rgba(255,255,255,0.70);
+  color: rgba(16,36,70,0.74);
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+#tradeMap .port-close:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.10);
+}
+
+#tradeMap .port-head{
+  padding-right: 44px;
+  margin-bottom: 10px;
+}
+#tradeMap .port-title{
+  margin: 0 0 4px;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgba(16,36,70,0.96);
+  letter-spacing: .01em;
+}
+#tradeMap .port-sub{
+  margin: 0;
+  font-size: 11px;
+  color: rgba(16,36,70,0.60);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+/* Countries chips */
+#tradeMap .port-countries{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 12px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid rgba(16,36,70,0.10);
+}
+#tradeMap .country-name,
+.trade-map .port-country-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(16,36,70,0.90);
+  background: rgba(16,36,70,0.045);
+  border: 1px solid rgba(16,36,70,0.12);
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+#tradeMap .country-name::before{
+  content:"";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(90,130,150,0.55);
+}
+#tradeMap .country-name.is-active{
+  background: rgba(0,91,172,0.10);
+  border-color: rgba(0,91,172,0.25);
+  color: rgba(0,62,126,0.96);
+}
+.trade-map .port-country-link:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+/* Columns */
+#tradeMap .port-cols{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+#tradeMap .port-col{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.34), rgba(255,255,255,0.10)),
+    rgba(16,36,70,0.03);
+  border: 1px solid rgba(16,36,70,0.08);
+  border-radius: 14px;
+  padding: 12px 12px 10px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.24);
+}
+#tradeMap .port-col-title{
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(16,36,70,0.78);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#tradeMap .port-col-title::before{
+  content:"";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(196,170,110,0.75);
+}
+#tradeMap .port-list{
+  margin: 0;
+  padding-left: 16px;
+}
+#tradeMap .port-list li{
+  margin: 7px 0;
+  font-size: 13px;
+  color: rgba(16,36,70,0.92);
+}
+#tradeMap .port-list li::marker{
+  color: rgba(90,130,150,0.55);
+}
+#tradeMap .port-list a{
+  color: rgba(16,36,70,0.92);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(16,36,70,0.16);
+}
+#tradeMap .port-list a:hover{
+  border-bottom-color: rgba(16,36,70,0.40);
+}
+
+/* =========================================================
+   事業内容ページ専用レスポンシブ
+   スマホ（SP） 〜768px
+========================================================= */
+@media (max-width: 768px) {
+
+  /* ---------- 共通タイトルまわり ---------- */
+  .top_title_container {
+    width: 90%;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .title_container h1 {
+    font-size: 2rem;
+  }
+
+  .title_container p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ==========================
+      ① 冒頭イントロカード
+     ========================== */
+  .business_intro_card {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .business_intro_left h2 {
+    font-size: 1.8rem;
+  }
+
+  .business_intro_left p {
+    font-size: 1.3rem;
+  }
+
+  .business_intro_right {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 91, 172, 0.12);
+  }
+
+  .business_intro_right li {
+    font-size: 1.3rem;
+  }
+
+  /* ==========================
+      ② 事業領域カード3つ
+     ========================== */
+  .business_card_section {
+    height: auto;
+    padding: 4rem 0 3rem;
+  }
+
+  .business_card_container {
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .business_card {
+    padding: 1.8rem 1.8rem 2rem;
+  }
+
+  .business_card h3 {
+    font-size: 1.6rem;
+  }
+
+  .business_lead {
+    font-size: 1.3rem;
+  }
+
+  .business_card li {
+    font-size: 1.3rem;
+  }
+
+  /* ==========================
+      ③ グローバルネットワーク
+     ========================== */
+  .globalnetwork{
+    display: block;
+  }
+  .global_network_section {
+    height: auto;
+    padding: 4rem 0 3rem;
+  }
+
+  .global_map_container {
+    padding: 0 1rem;
+  }
+
+  .global_map {
+    height: 30vh;
+  }
+
+  .global_caption {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+
+  /* ==========================
+      ④ バリューチェーン
+     ========================== */
+  .business_bridge_section {
+    height: auto;
+    padding: 4rem 0 3rem;
+    align-items: center;
+  }
+
+  .bridge_panel {
+    width: 90%;
+    padding: 2rem 1.8rem 2rem;
+  }
+
+  .bridge_row {
+    margin-top: 1.8rem;
+  }
+
+  .bridge_row_main {
+    font-size: 1.5rem;
+  }
+
+  .bridge_row_sub {
+    font-size: 1.2rem;
+  }
+
+  .bridge_flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bridge_node {
+    flex: 1 1 auto;
+  }
+
+  .bridge_arrow {
+    width: 100%;
+    height: 2.4rem;
+    font-size: 1.6rem;
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+
+  .bridge_note {
+    font-size: 1.1rem;
+  }
+  .bridge_row_title {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  .pc_only {
+    display: none;
+  }
+
+  /* ==========================
+      ⑤ お取引の流れ（Flow）
+     ========================== */
+  .business_flow_section {
+    margin: 4rem 0 3rem;
+    align-items: center;
+  }
+
+  .flow_step_container {
+    width: 90%;
+    flex-direction: column;
+    padding: 0;
+    gap: 1.4rem;
+  }
+
+  .flow_step {
+    padding: 1.4rem 1.6rem 1.6rem;
+  }
+
+  .flow_number {
+    font-size: 1.4rem;
+  }
+
+  .flow_step h3 {
+    font-size: 1.5rem;
+  }
+
+  .flow_step p {
+    font-size: 1.2rem;
+  }
+
+  /* ==========================
+      ⑥ CTAエリア
+     ========================== */
+  .business_cta_inner {
+    width: 90%;
+    padding: 2.4rem 2rem 2.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .business_cta_inner h2 {
+    font-size: 1.8rem;
+  }
+
+  .business_cta_inner p {
+    font-size: 1.3rem;
+  }
+
+  .business_cta_button {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.4rem;
+  }
+}
+
+/* =========================================================
+   9) Mobile Fine Tuning (<=640px)
+   - map/card/hotspot の最終上書きはここに集約
+========================================================= */
+@media (max-width: 640px){
+
+  /* transform が fixed を邪魔する対策 */
+  .trade-map,
+  .global_map_container,
+  .hover_three,
+  .fadein,
+  .show{
+    transform: none !important;
+  }
+
+  /* Map card: bottom sheet */
+  #tradeMap .port-cols{
+    grid-template-columns: 1fr;
+  }
+
+  #tradeMap .port-card{
+    position: fixed !important;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    padding: 16px 14px calc(14px + env(safe-area-inset-bottom));
+    border-radius: 18px 18px 0 0;
+
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.94));
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.18), 0 -2px 8px rgba(0,0,0,0.12);
+
+    transform: translateY(100%);
+    opacity: 1;
+    pointer-events: none;
+    transition: transform .32s cubic-bezier(.22,1,.36,1);
+    z-index: 1000;
+  }
+  #tradeMap .port-card.is-open{
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #tradeMap .port-close{
+    top: 10px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  /* Countries chips: horizontal scroll */
+  #tradeMap .port-countries{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 10px;
+  }
+  #tradeMap .port-countries::-webkit-scrollbar{ display: none; }
+
+  /* Hotspot positions (SP) */
+  .hs-europe{ left:11%; top:34%; }
+  .hs-north-africa{ left:15%; top:44%; }
+  .hs-west-asia{ left:25.85%; top:49%; }
+  .hs-central-asia{ left:34.25%; top:44%; }
+  .hs-se-asia{ left:45.75%; top:55%; }
+  .hs-oceania{ left:54.15%; top:77.8%; }
+  .hs-north-central-america{ left:81.35%; top:41%; }
+  .hs-south-america{ left:95.4%; top:60.7%; }
+
+  .hotspot{
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 5px rgba(196,170,110,0.3);
+    z-index: 3;
+  }
+  .hotspot:hover{
+    box-shadow: 0 0 0 12px rgba(196,170,110,0.3);
+  }
+  .hotspot::after{
+    width: 2px;
+    height: 2px;
+  }
+}

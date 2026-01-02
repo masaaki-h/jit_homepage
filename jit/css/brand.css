@@ -1,0 +1,294 @@
+.brand-page {
+  padding-bottom: 4rem;
+}
+.brand-tabs {
+  border-bottom: none;       
+  background: transparent;
+  margin-top: 1rem;
+}
+
+.brand-tabs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.4rem 1rem 0.4rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.brand-tab-button {
+  border: 1px solid rgba(0, 91, 172, 0.2);
+  background: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  position: relative;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.brand-tab-button::after {
+  content: none;
+}
+
+.brand-tab-button:hover {
+  background: #005bac;
+  color: #fff;
+  border-color: #005bac;
+  box-shadow: 0 8px 20px rgba(0, 91, 172, 0.25);
+  transform: translateY(-1px);
+}
+
+.brand-tab-button.is-active {
+  background: #005bac;
+  color: #fff;
+  border-color: #005bac;
+  box-shadow: 0 8px 20px rgba(0, 91, 172, 0.25);
+  font-weight: 600;
+}
+
+.brand-tab-button.is-active::after {
+  content: none;
+}
+
+.brand-views {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 0;
+}
+
+.brand-view {
+  display: none;
+}
+
+.brand-view.is-active {
+  display: block;
+}
+
+.brand-section {
+  margin-bottom: 2.6rem;
+}
+
+.brand-section-title {
+  font-size: 1.8rem;
+  margin: 0 0 0.7rem;
+  padding-left: 0.55rem;
+  border-left: 3px solid #005BAC;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-country-flag {
+  font-size: 1.4rem;
+}
+
+.brand-section-desc {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 1.3rem;
+  line-height: 1.8;
+}
+
+.brand-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
+.brand-card {
+  width: 260px;
+  height: 340px;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-card-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-card-thumb-placeholder {
+  font-size: 0.9rem;
+  color: #aaa;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brand-card-body {
+  padding: 1rem 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.brand-label-country {
+  display: inline-block;
+  width: auto;                
+  padding: 0.12rem 0.7rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid rgba(0,0,0,0.18);
+  margin-bottom: 0.3rem;
+  text-align: left;
+  align-self: flex-start;     
+}
+
+.brand-label-country.fr {
+  background: rgba(32, 78, 207, 0.12);
+  border-color: rgba(32, 78, 207, 0.4);
+  color: #204ECF;
+}
+
+.brand-label-country.es {
+  background: rgba(192, 58, 43, 0.12);
+  border-color: rgba(192, 58, 43, 0.4);
+  color: #C03A2B;
+}
+
+.brand-label-country.it {
+  background: rgba(30, 123, 52, 0.12);
+  border-color: rgba(30, 123, 52, 0.4);
+  color: #1E7B34;
+}
+
+.brand-label-country.th {
+  background: rgba(216, 136, 0, 0.12);
+  border-color: rgba(216, 136, 0, 0.4);
+  color: #D88800;
+}
+
+.brand-card-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.brand-card-desc {
+  font-size: 1.3rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* =========================================================
+   商品一覧（Brand）ページ専用レスポンシブ
+========================================================= */
+
+/* ==============================
+   ① スマホ（〜768px）
+============================== */
+@media (max-width: 768px) {
+
+  /* ページ余白・タイトルまわり */
+  .brand-page {
+    padding-bottom: 3rem;
+  }
+
+  .top_title_container {
+    width: 90%;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .title_container h1 {
+    font-size: 2rem;
+  }
+
+  .title_container p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  /* タブ（カテゴリ / 原産国 / ブランド） */
+  .brand-tabs-inner {
+    max-width: 100%;
+    padding: 1rem 1.2rem 0.2rem;
+    gap: 0.6rem;
+    justify-content: flex-start;
+  }
+
+  .brand-tab-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  /* ビューコンテナ */
+  .brand-views {
+    max-width: 100%;
+    padding: 1.8rem 1.2rem 0;
+  }
+
+  .brand-section {
+    margin-bottom: 2.2rem;
+  }
+
+  .brand-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .brand-section-desc {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* カードレイアウト */
+  .brand-card-grid {
+    justify-content: center;
+  }
+
+  .brand-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;                 /* 高さ固定を解除 */
+    margin: 0 auto;
+  }
+
+  .brand-card-thumb {
+    aspect-ratio: 4 / 3;
+  }
+
+  .brand-card-body {
+    padding: 1rem 1.2rem 1.4rem;
+  }
+
+  .brand-card-name {
+    font-size: 1.4rem;
+  }
+
+  .brand-card-desc {
+    font-size: 1.3rem;
+    -webkit-line-clamp: 4;        /* 少しだけ行数増やす */
+  }
+
+  .brand-label-country {
+    font-size: 1.1rem;
+    padding: 0.1rem 0.6rem;
+  }
+}
