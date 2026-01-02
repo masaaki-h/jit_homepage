@@ -37,4 +37,3 @@ docker-compose up -d
 ## ライセンス
 
 Copyright © 2022 JAPAN INTER TRADING CO., LTD. All Rights Reserved.
-
