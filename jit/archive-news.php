@@ -5,7 +5,7 @@
 <section class="top_title_container">
   <div class="title_container">
     <h1>ニュース<span>News</span></h1>
-    <p>JAPAN INTER TRADING からの<br>お知らせ・プレスリリース・最新情報をお届けします。</p>
+    <p>JIT からのお知らせ・プレスリリース・最新情報をお届けします。</p>
   </div>
 </section>
 

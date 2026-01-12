@@ -10,31 +10,39 @@
            <p class="hover_two">人と人を繋ぐ。<br>あらゆるものが<br>飛び交う世界へ</p>
         </div>
         <div class="message_container fadein">
-            <h2>世界の「食」と「人」を、つなぐ架け橋へ。</h2>
-            <p>私たちは、個性を大切にする事業家として、
-               <p>人と価値を結び、感謝の循環を生み出します。</p>
-                <span class="spacer"></span>
-               <p>流行に左右されない“普遍的な産業”として、</p>
-               <p>生活に欠かせない食品を通じ、</p>
-               <p>日本から世界へ、持続可能な未来を届けます。</p>
-                <span class="spacer"></span>
-               <p>スピードと柔軟性、そして精密さ。</p>
-               <p>大手にできない挑戦を、私たちは黒子として支え、</p>
-               <p>価値創造の架け橋となります。</p>
+            <h2>日本と世界の価値を重ね、次のスタンダードへ</h2>
+            <p>私たちは、日本が受け継いできた伝統や、</p>
+            <p>品質へのこだわり、誠実な姿勢を礎に、</p>
+            <p>世界各地が持つ多様な文化、発想、市場の力を重ね合わせ、</p>
+            <p>新たな付加価値を創出する総合商社です。</p>
+            <span class="spacer"></span>
+            <p>規模にとらわれない柔軟さと機動力を強みに、</p>
+            <p>一方で、大手企業とも共存・共栄し、</p>
+            <p>ともに価値を育てていく立ち位置を大切にしています。</p>
+            <span class="spacer"></span>
+            <p>食を起点に、ライフライン、ライフスタイルへ。</p>
+            <p>事業領域を横断しながら、</p>
+            <p>価値と価値を掛け合わせ、</p>
+            <p>次のスタンダードを形にしていきます。</p>
+            <span class="spacer"></span>
+            <p>誠実に、早く、正確に。</p>
+            <p>私たちは黒子として挑戦を支え、</p>
+            <p>信頼を礎に、日本と世界を結ぶ架け橋として、</p>
+            <p>持続可能な成長を、ともに実現していきます。</p>
         </div>
         <div class="trade_container fadein">
-            <div class="import_container">
-                <div class="import_box">
-                        <div class="border_box hover_two">
-                            <a href="<?php echo get_post_type_archive_link('brand'); ?>"><h3>輸入商品</h3></a>
-                        </div>
-                </div>
-            </div>
             <div class="export_container">
                 <div class="export_box">
                     <div class="border_box hover_two">
                         <a href="<?php echo get_post_type_archive_link('brand'); ?>"><h3>輸出商品</h3></a>
                     </div>
+                </div>
+            </div>
+            <div class="import_container">
+                <div class="import_box">
+                        <div class="border_box hover_two">
+                            <a href="<?php echo get_post_type_archive_link('brand'); ?>"><h3>輸入商品</h3></a>
+                        </div>
                 </div>
             </div>
         </div>

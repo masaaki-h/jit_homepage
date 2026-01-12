@@ -54,12 +54,17 @@
 }
 .recruit_position_cards {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  
+  justify-content: center;
 }
 .recruit_card {
+  flex: 1;
+  min-width: 300px;
+  max-width: calc(33.333% - 1.34rem);
   background: #ffffff;
   border-radius: 1.4rem;
   padding: 3rem;
@@ -88,14 +93,28 @@
   border-color: rgba(192, 88, 0, 0.25);
 }
 .recruit_card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
   padding-right: 4rem;
-  color: #111;
+  color: #222;
 }
 .recruit_lead {
   font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+  font-weight: 600;
+  margin: 0.4rem 0 0.8rem;
+  color: #222;
+}
+.recruit_card p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #555;
+}
+.recruit_subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.6rem;
+  color: #222;
 }
 .recruit_card ul {
   padding-left: 1.2rem;
@@ -185,6 +204,8 @@
   overflow-x: auto;
 }
 .recruit_flow_step {
+  flex: 1;
+  min-width: 0;
   background: #ffffff;
   border-radius: 1.3rem;
   padding: 2rem 1.5rem 3rem;
@@ -249,7 +270,21 @@
 
 /* =========================================================
    採用情報ページ専用レスポンシブ
-   ① スマホ（SP） 〜768px
+   ① タブレット 769px〜1024px
+========================================================= */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .recruit_position_cards {
+    width: 90%;
+  }
+  .recruit_card {
+    max-width: calc(50% - 1rem);
+    min-width: 280px;
+  }
+}
+
+/* =========================================================
+   採用情報ページ専用レスポンシブ
+   ② スマホ（SP） 〜768px
 ========================================================= */
 @media (max-width: 768px) {
 
@@ -275,13 +310,20 @@
   }
   .recruit_intro_inner {
     width: 100%;
-    padding: 2.2rem 1.8rem;
+    padding: 2.2rem 1.5rem;
+    box-sizing: border-box;
   }
   .recruit_intro_inner h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
   }
   .recruit_intro_inner p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.7;
   }
 
   /* =======================
@@ -289,32 +331,70 @@
      ======================= */
   .recruit_position_section {
     padding: 2.5rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
   }
   .recruit_position_cards {
     width: 100%;
+    max-width: 100%;
     flex-direction: column;
     gap: 1.8rem;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .recruit_card {
     width: 100%;
-    padding: 2.2rem 1.8rem 2.4rem;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 2.2rem 1.6rem 2.4rem;
+    box-sizing: border-box;
+  }
+  .recruit_tag {
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    padding: 0.15rem 0.7rem;
   }
   .recruit_card h3 {
-    font-size: 1.5rem;
-    padding-right: 3rem;
+    font-size: 1.4rem;
+    padding-right: 4rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
   }
   .recruit_lead {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .recruit_card p {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+  }
+  .recruit_subtitle {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+  }
+  .recruit_card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .recruit_card li {
     font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
   }
 
   /* =======================
       働く環境・求める人物像
      ======================= */
   .recruit_culture_section {
-    padding: 0rem 2.5rem 2.5rem;
+    padding: 2.5rem 1.5rem 2.5rem;
   }
   .recruit_culture_inner {
     width: 100%;
@@ -323,7 +403,7 @@
   }
   .recruit_culture_box {
     width: 100%;
-    padding: 2rem 1.6rem;
+    padding: 2.2rem 1.6rem;
   }
   .recruit_culture_box h3 {
     font-size: 1.6rem;

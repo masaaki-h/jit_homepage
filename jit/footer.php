@@ -1,8 +1,8 @@
 <footer class="fadein">
             <div class="footer_top_container">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
-                <h3>JAPAN INTER TRADING 株式会社</h3>
-                <p>〒103-0022 東京都中央区日本橋室町１丁目２−６<span>TEL: <a href="tel:0362816410">03-6281-6410</a></span></p>
+                <h3>ジャパン・インタートレーディング株式会社</h3>
+                <p>〒103-0022 東京都中央区日本橋室町１丁目２−６</p>
             </div>
             <div class="footer_bottom_container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6895088993983!2d139.7738574!3d35.6846465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2d52b8eaf71%3A0x1e047b7a7e270295!2z44K444Oj44OR44Oz772l44Kk44Oz44K_44O844OI44Os44O844OH44Kj44Oz44Kw44ix!5e0!3m2!1sja!2sjp!4v1762247644899!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
