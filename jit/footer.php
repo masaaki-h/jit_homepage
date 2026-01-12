@@ -82,13 +82,23 @@
                 });
             });
 
-            const hash = window.location.hash;
-            if (hash === "#brand-country") {
+            // URLパラメータからviewを取得
+            const urlParams = new URLSearchParams(window.location.search);
+            const viewParam = urlParams.get("view");
+            
+            if (viewParam === "country") {
                 activate("country");
-            } else if (hash === "#brand-list") {
+            } else if (viewParam === "brand") {
                 activate("brand");
             } else {
-                activate("category");
+                const hash = window.location.hash;
+                if (hash === "#brand-country") {
+                    activate("country");
+                } else if (hash === "#brand-list") {
+                    activate("brand");
+                } else {
+                    activate("category");
+                }
             }
             });
         </script>
