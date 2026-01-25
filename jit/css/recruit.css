@@ -54,17 +54,13 @@
 }
 .recruit_position_cards {
   width: 80%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  gap: 3rem;
 }
 .recruit_card {
   flex: 1;
-  min-width: 300px;
-  max-width: calc(33.333% - 1.34rem);
+  min-width: 0;
   background: #ffffff;
   border-radius: 1.4rem;
   padding: 3rem;
@@ -272,15 +268,6 @@
    採用情報ページ専用レスポンシブ
    ① タブレット 769px〜1024px
 ========================================================= */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .recruit_position_cards {
-    width: 90%;
-  }
-  .recruit_card {
-    max-width: calc(50% - 1rem);
-    min-width: 280px;
-  }
-}
 
 /* =========================================================
    採用情報ページ専用レスポンシブ

@@ -39,6 +39,10 @@
   border: 1px solid rgba(0, 91, 172, 0.06);
   color: #555;
 }
+.business_intro_left {
+  flex: 1;
+  padding-right: 2rem;
+}
 .business_intro_left h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
@@ -114,17 +118,27 @@
 .business_tag.export{ color:#008060; }
 .business_tag.promotion{ color:#c05800; }
 
+.business_label{
+  font-size:1.2rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:#005bac;
+  margin-top:10px;
+  margin-bottom:6px;
+}
 .business_card h3{
-  font-size:1.8rem;
-  margin-bottom:0.4rem;
+  font-size:1.6rem;
+  font-weight:700;
+  margin-bottom:10px;
   color:#222;
+  line-height:1.4;
 }
 .business_lead{
   font-size:1.4rem;
   margin-bottom:0.8rem;
 }
 .business_card p{
-  font-size:1.3rem;
+  font-size:1.4rem;
   line-height:1.7;
   margin-bottom:1rem;
   color:#555;
@@ -175,7 +189,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5rem 0;
+  margin: 10rem 0 6rem 0;
 }
 .business_flow_section .title_container{
   margin-top: 0;
@@ -247,11 +261,68 @@
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
 }       
+/* =========================================================
+   6-1) Chain Wrapper (親要素)
+========================================================= */
+.business_chain_wrapper {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  z-index: 0;
+}
+
+/* 背景画像を配置（ブラー適用・透過、上下グラデーション） */
+.business_chain_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/value_chain.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  opacity: 0.6;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0.6) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0.6) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 0;
+}
+
+
 .business_bridge_section {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.business_bridge_section > * {
+  position: relative;
+  z-index: 1;
 }
 
 .business_bridge_section .title_container {
@@ -264,7 +335,7 @@
   margin: 2rem auto 0;
   padding: 3rem 3rem 2.4rem;
   border-radius: 1.6rem;
-  background: linear-gradient(135deg, #005bac0d, #f5f8ff);
+  background: linear-gradient(to bottom, rgba(0, 91, 172, 0.05), rgba(245, 248, 255, 0.3));
   border: 1px solid rgba(0, 91, 172, 0.16);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.05);
 }
@@ -295,14 +366,14 @@
 /* ノード＋矢印の並び */
 .bridge_flow {
   display: flex;
-  flex-wrap: wrap;
   align-items: stretch;
   gap: 0.9rem;
 }
 
 /* ノード（1つ1つの箱） */
 .bridge_node {
-  flex: 1 1 150px;
+  flex: 1;
+  min-width: 0;
   background: #ffffff;
   border-radius: 1.2rem;
   padding: 1.1rem 0.8rem 1.2rem;
@@ -350,8 +421,127 @@
 .pc_only{ display: inline; }
 
 /* =========================================================
+   6-2) Value Support Section
+========================================================= */
+.business_value_support_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 5rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.business_value_support_section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.business_value_support_section .title_container {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.business_value_support_section .title_container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.business_value_support_section .title_container span {
+  font-size: 1rem;
+}
+
+.business_value_support_section .title_container p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.value_support_container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.value_support_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(0, 91, 172, 0.08);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+}
+
+.value_support_content {
+  flex: 1;
+}
+
+.value_support_label{
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #005bac;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.value_support_content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.value_support_content p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* =========================================================
    7) Trade Map Interactive (hotspot / card)
 ========================================================= */
+.trade-map-text-wrapper{
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.trade-map-text{
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+  color: rgba(60, 40, 25, 0.95);
+  white-space: nowrap;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.7), 0 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.08em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.trade-map-text-en{
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Times New Roman', 'Georgia', serif;
+  color: rgba(60, 40, 25, 0.85);
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.7), 0 1px 1px rgba(0,0,0,0.1);
+  letter-spacing: 0.1em;
+  margin: 8px 0 0 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+
 .trade-map{
   position: relative;
   border-radius: 1.2rem;
@@ -366,7 +556,7 @@
   border-radius: 999px;
   background: transparent;
   border: 2px solid transparent;
-  box-shadow: 0 0 0 6px rgba(196,170,110,0.18);
+  box-shadow: 0 0 0 6px rgba(196,170,110,0.6);
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1;
@@ -380,11 +570,11 @@
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: rgba(16,36,70,0.95);
+  background: rgba(16,36,70,1);
   transform: translate(-50%, -50%);
 }
 .hotspot:hover{
-  box-shadow: 0 0 0 10px rgba(196,170,110,0.3);
+  box-shadow: 0 0 0 10px rgba(196,170,110,0.6);
 }
 .hotspot:focus-visible{
   outline: 3px solid rgba(16,36,70,0.35);
@@ -395,17 +585,17 @@
 .hotspot-japan{
   width: 48px;
   height: 48px;
-  box-shadow: 0 0 0 8px rgba(0,91,172,0.25);
+  box-shadow: 0 0 0 8px rgba(220,53,69,0.45);
   z-index: 1;
 }
 .hotspot-japan::after{
   width: 10px;
   height: 10px;
-  background: rgba(0,91,172,0.95);
-  box-shadow: 0 0 8px rgba(0,91,172,0.6);
+  background: rgba(220,53,69,1);
+  box-shadow: 0 0 8px rgba(220,53,69,0.6);
 }
 .hotspot-japan:hover{
-  box-shadow: 0 0 0 12px rgba(0,91,172,0.35);
+  box-shadow: 0 0 0 12px rgba(220,53,69,0.55);
 }
 
 /* 各国のhotspot（アニメーション付き） */
@@ -431,7 +621,7 @@
 .hotspot-country.is-active{
   animation: none;
   transform: translate(-50%, -50%) scale(1.2);
-  box-shadow: 0 0 0 10px rgba(196,170,110,0.3);
+  box-shadow: 0 0 0 10px rgba(196,170,110,0.5);
 }
 .hotspot-country.is-active .country-name-label{
   opacity: 1;
@@ -489,27 +679,28 @@
 /* Card (desktop) */
 #tradeMap .port-card{
   position: absolute;
-  right: 18px;
-  bottom: 18px;
-  width: min(540px, calc(100% - 36px));
+  right: 32px;
+  bottom: 32px;
+  width: min(640px, 28vw);
+  max-width: 28vw;
+  max-height: 28vh;
+  aspect-ratio: 1120 / 928;
   z-index: 10;
 
-  background:
-    radial-gradient(120% 90% at 10% 0%, rgba(255,255,255,0.78), rgba(255,255,255,0) 55%),
-    radial-gradient(120% 90% at 100% 120%, rgba(16,36,70,0.10), rgba(16,36,70,0) 55%),
-    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.88));
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.03), rgba(0,0,0,0.14)),
+    url(../img/note.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  border: 1px solid rgba(16,36,70,0.14);
+  border: none;
   border-radius: 18px;
-  padding: 16px 16px 14px;
+  padding: 24px 28px 26px;
 
   box-shadow:
-    0 24px 60px rgba(0,0,0,0.16),
-    0 6px 18px rgba(0,0,0,0.08),
-    inset 0 0 0 1px rgba(255,255,255,0.40);
-
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+    0 24px 60px -10px rgba(0,0,0,0.22),
+    0 6px 18px -10px rgba(0,0,0,0.12);
 
   opacity: 0;
   transform: translateY(12px) scale(0.985);
@@ -554,9 +745,9 @@
   margin-bottom: 10px;
 }
 #tradeMap .port-title{
-  margin: 0 0 4px;
+  margin: 0 0 3px;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(16,36,70,0.96);
   letter-spacing: .01em;
 }
@@ -572,17 +763,17 @@
 #tradeMap .port-countries{
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 12px 0 12px;
-  padding: 0 0 12px;
+  gap: 6px;
+  margin: 10px 0 10px;
+  padding: 0 0 10px;
   border-bottom: 1px solid rgba(16,36,70,0.10);
 }
 #tradeMap .country-name,
 .trade-map .port-country-link{
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
+  gap: 4px;
+  padding: 4px 7px;
   border-radius: 999px;
   font-size: 12px;
   line-height: 1;
@@ -595,8 +786,8 @@
 }
 #tradeMap .country-name::before{
   content:"";
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: rgba(90,130,150,0.55);
 }
@@ -614,40 +805,37 @@
 #tradeMap .port-cols{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 #tradeMap .port-col{
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.34), rgba(255,255,255,0.10)),
-    rgba(16,36,70,0.03);
+  background: transparent;
   border: 1px solid rgba(16,36,70,0.08);
-  border-radius: 14px;
-  padding: 12px 12px 10px;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.24);
+  border-radius: 12px;
+  padding: 8px 8px 6px;
 }
 #tradeMap .port-col-title{
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   font-size: 12px;
   font-weight: 800;
   color: rgba(16,36,70,0.78);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 }
 #tradeMap .port-col-title::before{
   content:"";
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background: rgba(196,170,110,0.75);
 }
 #tradeMap .port-list{
   margin: 0;
-  padding-left: 16px;
+  padding-left: 12px;
 }
 #tradeMap .port-list li{
-  margin: 7px 0;
-  font-size: 13px;
+  margin: 5px 0;
+  font-size: 12px;
   color: rgba(16,36,70,0.92);
 }
 #tradeMap .port-list li::marker{
@@ -820,6 +1008,36 @@
     justify-content: center;
   }
 
+  /* Value Support Section (Mobile) */
+  .business_value_support_section {
+    margin: 3rem 0;
+  }
+
+  .value_support_container {
+    width: 90%;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .value_support_item {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .value_support_content h3 {
+    font-size: 1.6rem;
+  }
+
+  .value_support_content h3 span {
+    font-size: 1.2rem;
+  }
+
+  .value_support_content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
   .pc_only {
     display: none;
   }
@@ -885,6 +1103,33 @@
 @media (max-width: 640px){
 
   /* transform が fixed を邪魔する対策 */
+  .trade-map-text-wrapper{
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .trade-map-text{
+    font-size: 1.2rem;
+    white-space: normal;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'MS PMincho', serif;
+    color: rgba(60, 40, 25, 0.95);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+
+  .trade-map-text-en{
+    font-size: 0.75rem;
+    white-space: normal;
+    letter-spacing: 0.06em;
+    margin-top: 0;
+  }
+
   .trade-map,
   .global_map_container,
   .hover_three,
@@ -906,12 +1151,15 @@
 
     width: 100%;
     max-width: none;
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: 0;
 
-    padding: 16px 14px calc(14px + env(safe-area-inset-bottom));
+    padding: 16px 20px calc(14px + env(safe-area-inset-bottom));
     border-radius: 18px 18px 0 0;
 
-    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.94));
+    background: #ffffff;
     box-shadow: 0 -10px 30px rgba(0,0,0,0.18), 0 -2px 8px rgba(0,0,0,0.12);
 
     transform: translateY(100%);
@@ -926,11 +1174,13 @@
   }
 
   #tradeMap .port-close{
+    position: absolute;
     top: 10px;
-    right: 12px;
+    right: 20px;
     width: 36px;
     height: 36px;
     font-size: 18px;
+    z-index: 1001;
   }
 
   /* Countries chips: horizontal scroll */
@@ -954,18 +1204,18 @@
   .hs-south-america{ left:95.4%; top:60.7%; }
 
   .hotspot{
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     border: 1.5px solid transparent;
-    box-shadow: 0 0 0 3px rgba(196,170,110,0.3);
-    z-index: 1;
+    box-shadow: 0 0 0 2.5px rgba(196,170,110,0.5);
+    z-index:1;
   }
   .hotspot:hover{
-    box-shadow: 0 0 0 6px rgba(196,170,110,0.3);
+    box-shadow: 0 0 0 5px rgba(196,170,110,0.5);
   }
   .hotspot::after{
-    width: 4px;
-    height: 4px;
+    width: 3.5px;
+    height: 3.5px;
   }
   
   /* スマホ時の国名表示調整 */
@@ -982,21 +1232,23 @@
   
   /* 日本のhotspotサイズ調整 */
   .hotspot-japan{
-    width: 32px;
-    height: 32px;
-    box-shadow: 0 0 0 5px rgba(0,91,172,0.25);
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 0 0 4px rgba(220,53,69,0.45);
   }
   .hotspot-japan::after{
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
+    background: rgba(220,53,69,1);
+    box-shadow: 0 0 8px rgba(220,53,69,0.6);
   }
   .hotspot-japan:hover{
-    box-shadow: 0 0 0 7px rgba(0,91,172,0.35);
+    box-shadow: 0 0 0 6px rgba(220,53,69,0.55);
   }
   
   /* パネル表示中の選択中のhotspot（スマホ用） */
   .hotspot-country.is-active{
-    box-shadow: 0 0 0 6px rgba(196,170,110,0.3);
+    box-shadow: 0 0 0 5px rgba(196,170,110,0.5);
   }
   
   /* アニメーションを軽量化（スマホ時） */

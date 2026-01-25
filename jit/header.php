@@ -6,6 +6,22 @@
         <title>JAPAN INTER TRADING</title> 
         <meta name="description" content="JAPAN INTER TRADING公式サイト。食品を通じて人と価値を繋ぐ架け橋となる総合商社。">
         <meta name="keywords" content="食品商社, 総合商社, JAPAN INTER TRADING, 10周年, 食品輸出, 食品輸入">
+        
+        <!-- Google翻訳 -->
+        <div id="google_translate_element" style="position: absolute; top: -9999px; left: -9999px;"></div>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            if (typeof google !== "undefined" && google.translate) {
+              new google.translate.TranslateElement({
+                pageLanguage: 'ja',
+                includedLanguages: 'ja,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+              }, 'google_translate_element');
+            }
+          }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <?php wp_head(); ?>
     </head>

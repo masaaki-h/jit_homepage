@@ -104,12 +104,12 @@
     padding-top: 5rem;
 }
 .philosophy_card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 2.2rem;
 }
 
 .philosophy_card {
+    flex: 1;
     position: relative;
     padding: 2.2rem 2.2rem 2.4rem;
     background: #ffffff;
@@ -390,7 +390,7 @@
   }
 
   .philosophy_card_container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 1.8rem;
   }
 

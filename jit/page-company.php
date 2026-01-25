@@ -68,9 +68,10 @@
               <div class="philosophy_label">Vision</div>
               <h3>受け継がれた価値を、革新として世界へ</h3>
               <p>
-                食からライフライン、ライフスタイルに亘る領域において、<br>
-                革新的なソリューションを通じ、<br>
-                ステークホルダーとお客様から期待を凌駕する付加価値を提供し、<br>
+                食からライフライン、ライフスタイルに亘る<br>
+                領域において、革新的なソリューションを通じ、<br>
+                ステークホルダーとお客様から期待を凌駕する<br>
+                付加価値を提供し、<br>
                 持続可能な成長を追求する総合商社となります
               </p>
             </div>
@@ -79,14 +80,14 @@
               <h3>共創を通じて、持続可能な価値を世界へ</h3>
               <p>
                 お客様、従業員、地域社会と連携し、<br>
-                社会的責任と持続可能な価値創造する事業の展開を通じて、
-                日本から世界に貢献します
+                社会的責任と持続可能な価値創造する<br>
+                事業の展開を通じて、日本から世界に貢献します
               </p>
             </div>
 
             <div class="philosophy_card values">
               <div class="philosophy_label">Values</div>
-              <h3>誠実に、早く、正確に。信頼を礎に、価値を磨き続ける</h3>
+              <h3>誠実に、早く、正確に<br>信頼を礎に、価値を磨き続ける</h3>
               <ul>
                 <li>品質・品格と信頼性</li>
                 <li>お客様中心主義</li>
@@ -230,35 +231,6 @@
                 <div class="history_year_badge">2026.03</div>
                 <div class="history_card">
                   <h3>タイ産鶏肉の輸入販売を開始予定</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="president_container fadein">
-            <div class="president_title_container title_container" >
-              <h1>社長メッセージ <span>Message</span></h1>
-              <p>私たちは、信頼を礎に、人と社会のより良い未来を創り続けます。</p>
-            </div>
-            <div class="president_content_container">
-              <div class="president_img_card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/president.png" alt="代表取締役 福井 悦子">
-              </div>
-              <div class="president_message_card">
-                <p>
-                  私たちJITは、日本製の食料品、飲料、酒、日用雑貨、医薬品、<br>
-                  自動車用部品および宝飾品の卸売・販売を取り扱っております。
-                </p>
-                <p>
-                  お客様一社一社のご要望に真摯に向き合い、常に最適なご提案を差し上げること。<br>
-                  その想いのもと、私たち自身が「お客様の代わり」となって商品を厳選し、<br>
-                  安心してお選びいただける価値ある商材だけをお届けしてまいります。
-                </p>
-                <p>
-                  設立間もない会社ではありますが、「見えないところで確かな仕事をする黒子」として、<br>
-                  信頼に応える責任と誇りを胸に、日々社業に努めております。
-                </p>
-                <div class="president_sign">
-                  <span>代表取締役</span><span class="president_name">福井 悦子</span>
                 </div>
               </div>
             </div>

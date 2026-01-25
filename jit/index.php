@@ -7,7 +7,7 @@
            <div class="top_container_logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/tenlogo.png" class="hover_two">
            </div>
-           <p class="hover_two">人と人を繋ぐ。<br>あらゆるものが<br>飛び交う世界へ</p>
+           <p class="top_main_text hover_two">人と人を繋ぐ。<br>あらゆるものが<br>飛び交う世界へ</p>
         </div>
         <div class="message_container fadein">
             <h2>日本と世界の価値を重ね、次のスタンダードへ</h2>

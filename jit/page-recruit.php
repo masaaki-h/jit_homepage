@@ -47,7 +47,7 @@
         <!-- 営業職 -->
         <div class="recruit_card hover_three">
           <div class="recruit_tag mid">中途採用</div>
-          <h3>海外/国内営業(総合職/中途採用）</h3>
+          <h3>海外/国内営業<br>（総合職/中途採用）</h3>
           <p class="recruit_lead">
             事業の最前線で、価値と信頼をつなぐ。
           </p>
@@ -75,7 +75,7 @@
         <!-- 海外営業 -->
         <div class="recruit_card hover_three">
           <div class="recruit_tag mid">中途採用</div>
-          <h3>営業/貿易サポート担当（事務職/中途採用）</h3>
+          <h3>営業/貿易サポート担当<br>（事務職/中途採用）</h3>
           <p class="recruit_lead">
             現場を支え、事業の精度を高める。
           </p>
@@ -103,7 +103,7 @@
         <!-- バックオフィス -->
         <div class="recruit_card hover_three">
           <div class="recruit_tag office">バックオフィス</div>
-          <h3>経理担当（事務職/中途採用）</h3>
+          <h3>経理担当<br>（事務職/中途採用）</h3>
           <p class="recruit_lead">
             数字で、事業の持続性を支える。
           </p>
