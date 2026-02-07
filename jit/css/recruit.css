@@ -295,18 +295,18 @@
   .recruit_intro_section {
     padding: 2.5rem 1.5rem 2rem;
   }
-  .recruit_intro_inner {
+.recruit_intro_inner {
     width: 100%;
     padding: 2.2rem 1.5rem;
     box-sizing: border-box;
   }
-  .recruit_intro_inner h2 {
-    font-size: 1.6rem;
+.recruit_intro_inner h2 {
+    font-size: 1.5rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
   }
-  .recruit_intro_inner p {
+.recruit_intro_inner p {
     font-size: 1.2rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -316,13 +316,13 @@
   /* =======================
       募集ポジション
      ======================= */
-  .recruit_position_section {
+.recruit_position_section {
     padding: 2.5rem 1.5rem 2.5rem;
     box-sizing: border-box;
     overflow-x: hidden;
     width: 100%;
   }
-  .recruit_position_cards {
+.recruit_position_cards {
     width: 100%;
     max-width: 100%;
     flex-direction: column;
@@ -331,45 +331,45 @@
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  .recruit_card {
+.recruit_card {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
     padding: 2.2rem 1.6rem 2.4rem;
     box-sizing: border-box;
   }
-  .recruit_tag {
+.recruit_tag {
     top: 1rem;
     right: 1rem;
     font-size: 0.9rem;
     padding: 0.15rem 0.7rem;
   }
-  .recruit_card h3 {
+.recruit_card h3 {
     font-size: 1.4rem;
     padding-right: 4rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.4;
   }
-  .recruit_lead {
+.recruit_lead {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-  .recruit_card p {
+.recruit_card p {
     font-size: 1.2rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.6;
   }
-  .recruit_subtitle {
+.recruit_subtitle {
     font-size: 1.2rem;
     margin: 1rem 0 0.5rem;
   }
-  .recruit_card ul {
+.recruit_card ul {
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
   }
-  .recruit_card li {
+.recruit_card li {
     font-size: 1.2rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -380,22 +380,21 @@
   /* =======================
       働く環境・求める人物像
      ======================= */
-  .recruit_culture_section {
+.recruit_culture_section {
     padding: 2.5rem 1.5rem 2.5rem;
   }
-  .recruit_culture_inner {
+.recruit_culture_inner {
     width: 100%;
     flex-direction: column;
     gap: 1.8rem;
   }
-  .recruit_culture_box {
-    width: 100%;
+.recruit_culture_box {
     padding: 2.2rem 1.6rem;
   }
-  .recruit_culture_box h3 {
+.recruit_culture_box h3 {
     font-size: 1.6rem;
   }
-  .recruit_culture_box li {
+.recruit_culture_box li {
     font-size: 1.3rem;
     margin-left: 1rem;
   }
@@ -403,85 +402,85 @@
   /* =======================
       募集要項サマリー（表）
      ======================= */
-  .recruit_summary_section {
+.recruit_summary_section {
     padding: 2.5rem 1.5rem 2.8rem;
   }
-  .recruit_summary_card {
-    width: 100%;
+.recruit_summary_card {
+    width: 90%;
     padding: 2.2rem 1.6rem;
     text-align: left;
   }
 
   /* テーブルを縦並びに */
-  .recruit_summary_card table,
-  .recruit_summary_card tbody,
-  .recruit_summary_card tr,
-  .recruit_summary_card th,
-  .recruit_summary_card td {
+.recruit_summary_card table,
+.recruit_summary_card tbody,
+.recruit_summary_card tr,
+.recruit_summary_card th,
+.recruit_summary_card td {
     display: block;
     width: 100%;
   }
-  .recruit_summary_card th {
+.recruit_summary_card th {
     border-bottom: none;
     padding: 0.8rem 0 0.2rem;
     font-size: 1.3rem;
   }
-  .recruit_summary_card td {
+.recruit_summary_card td {
     border-bottom: 1px solid rgba(0, 91, 172, 0.08);
     padding: 0 0 0.8rem;
     font-size: 1.3rem;
   }
-  .recruit_summary_card tr:last-child td {
+.recruit_summary_card tr:last-child td {
     border-bottom: none;
   }
 
   /* =======================
       選考フロー
      ======================= */
-  .recruit_flow_section {
+.recruit_flow_section {
     padding: 2.5rem 2.5rem 3rem;
   }
-  .recruit_flow_steps {
+.recruit_flow_steps {
     width: 100%;
     flex-direction: column;
     gap: 1.4rem;
     overflow-x: visible;
   }
-  .recruit_flow_step {
-    width: 100%;
+.recruit_flow_step {
+
     padding: 1.8rem 1.6rem 2.1rem;
   }
-  .recruit_flow_number {
+.recruit_flow_number {
     font-size: 1.3rem;
   }
-  .recruit_flow_step h3 {
+.recruit_flow_step h3 {
     font-size: 1.5rem;
   }
-  .recruit_flow_step p {
+.recruit_flow_step p {
     font-size: 1.3rem;
   }
 
   /* =======================
       CTA（お問い合わせ）
      ======================= */
-  .recruit_cta_section {
+.recruit_cta_section {
     padding: 3rem 1.5rem 3.5rem;
   }
-  .recruit_cta_inner {
-    width: 100%;
+.recruit_cta_inner {
+    width: 90%;
     padding: 2.2rem 1.8rem 2.5rem;
   }
-  .recruit_cta_inner h2 {
+.recruit_cta_inner h2 {
     font-size: 1.7rem;
   }
-  .recruit_cta_inner p {
-    font-size: 1.3rem;
+.recruit_cta_inner p {
+    font-size: 1rem;
   }
-  .recruit_cta_button {
+.recruit_cta_button {
     font-size: 1.3rem;
     padding: 0.9rem 2.2rem;
   }
-  .recruit_cta_note {
+.recruit_cta_note {
     font-size: 1.1rem;
   }
 }

@@ -167,6 +167,19 @@
         <script src="<?php echo get_template_directory_uri(); ?>/js/business.js" defer></script>
         <?php endif; ?>
 
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btn = document.querySelector(".history_more_btn");
+            var wrapper = document.querySelector(".history_more_wrapper");
+            if (!btn || !wrapper) return;
+            btn.addEventListener("click", function() {
+                var isOpen = wrapper.classList.toggle("is-open");
+                btn.classList.toggle("is-open", isOpen);
+                btn.textContent = isOpen ? "閉じる" : "続きを見る";
+            });
+        });
+        </script>
+
         <script src="<?php echo get_template_directory_uri(); ?>/js/common.js" defer></script>
         <?php wp_footer(); ?>
     </body>

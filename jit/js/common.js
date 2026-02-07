@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     fadeTargets.forEach(el => fadeObserver.observe(el));
   }
+
   const scrollLinks = document.querySelectorAll("a[data-scroll]");
   scrollLinks.forEach(link => {
     link.addEventListener("click", e => {

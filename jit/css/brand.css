@@ -17,19 +17,18 @@
 }
 
 .brand-tab-button {
-  border: 1px solid rgba(0, 91, 172, 0.2);
+  border: 1px solid #c5d9f1;
   background: #fff;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1.8rem;
   border-radius: 999px;
   font-size: 1.2rem;
-  color: #555;
+  color: #6c757d;
   cursor: pointer;
   position: relative;
   transition:
     background 0.25s ease,
     color 0.25s ease,
     box-shadow 0.25s ease,
-    transform 0.25s ease,
     border-color 0.25s ease;
 }
 
@@ -38,19 +37,23 @@
 }
 
 .brand-tab-button:hover {
-  background: #005bac;
-  color: #fff;
-  border-color: #005bac;
-  box-shadow: 0 8px 20px rgba(0, 91, 172, 0.25);
-  transform: translateY(-1px);
+  border-color: rgba(0, 91, 172, 0.4);
+  color: #333;
+  background: #f8fafc;
 }
 
 .brand-tab-button.is-active {
   background: #005bac;
   color: #fff;
   border-color: #005bac;
-  box-shadow: 0 8px 20px rgba(0, 91, 172, 0.25);
-  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 91, 172, 0.25);
+  font-weight: normal;
+}
+
+.brand-tab-button.is-active:hover {
+  background: #004a8f;
+  border-color: #004a8f;
+  color: #fff;
 }
 
 .brand-tab-button.is-active::after {

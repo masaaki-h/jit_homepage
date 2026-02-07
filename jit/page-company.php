@@ -141,6 +141,7 @@
                 </div>
               </div>
 
+              <div class="history_more_wrapper">
               <div class="history_item">
                 <div class="history_year_badge">2024.04</div>
                 <div class="history_card">
@@ -231,6 +232,11 @@
                 <div class="history_card">
                   <h3>タイ産鶏肉の輸入販売を開始予定</h3>
                 </div>
+              </div>
+              </div>
+
+              <div class="history_more_btn_wrapper">
+                <button type="button" class="history_more_btn">続きを見る</button>
               </div>
             </div>
           </div>

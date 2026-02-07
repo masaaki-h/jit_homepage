@@ -26,13 +26,12 @@
   cursor: pointer;
 }
 .business_intro_card {
-  width: 90%;
+  width: 87%;
   margin: 10rem auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:6rem;
-  gap: 5rem;
+  padding:5rem;
   background: #ffffff;
   border-radius: 1.6rem;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
@@ -53,6 +52,7 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 1.7;
+  text-align: center;
 }
 
 .business_intro_right {
@@ -440,6 +440,7 @@
 .business_value_support_section .title_container h1 {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
+  padding: 0 1.5rem;
 }
 
 .business_value_support_section .title_container span {
@@ -862,6 +863,7 @@
   }
 
   .title_container p {
+    width: 90%;
     font-size: 1.3rem;
     margin-bottom: 2rem;
   }
@@ -883,6 +885,7 @@
 
   .business_intro_left p {
     font-size: 1.3rem;
+    text-align: center;
   }
 
   .business_intro_right {
@@ -943,7 +946,7 @@
   }
 
   .global_map {
-    height: 300px;
+    height: 250px;
   }
 
   .global_caption {

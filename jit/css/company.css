@@ -1,40 +1,4 @@
-.top_title_container{
-    width: 80%;
-    margin: 5rem auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 91, 172, 0.08);
-    padding-bottom: 2rem;
-}
-.title_container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.14em;
-    text-align: center;
-    cursor: default;
-}
-.title_container h1{
-    font-size: 2.4rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 1.2rem;
-}
-.title_container p {
-    font-size: 1.4rem;
-    color: #555;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-.title_container span {
-    font-size: 1.2rem;
-    color: #005bac;
-    margin-left: 0.5rem;
-}
+/* 共通タイトルは stylesheet.css で定義。以下は会社概要ページ専用 */
 .profile_card_container{
     width: 100%;
     display: flex;
@@ -178,7 +142,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100vh;
+
     padding: 0 10%;
     margin: 10rem 0 6rem 0;
 }
@@ -250,6 +214,44 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
+
+/* 沿革 続きを見る */
+.history_item_container .history_more_wrapper {
+    display: none;
+
+}
+.history_item_container .history_more_wrapper.is-open {
+    display: block !important;
+}
+.history_more_btn_wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+.history_more_btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #005bac;
+    background: #fff;
+    border: 2px solid #005bac;
+    border-radius: 99.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.history_more_btn:hover {
+    color: #fff;
+    background: #005bac;
+}
+.history_more_btn.is-open {
+    border-color: #555;
+    color: #555;
+}
+.history_more_btn.is-open:hover {
+    color: #fff;
+    background: #555;
+    border-color: #555;
+}
+
 .president_container {
     height: 55vh;
     display: flex;
@@ -355,7 +357,6 @@
       ① 会社概要カード（Profile）
      ========================== */
   .profile_card_container {
-    padding: 0 5%;
     text-align: left;
   }
   .profile_card {
