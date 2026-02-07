@@ -46,7 +46,7 @@
                 </tr>
                 <tr>
                   <th>従業員数</th>
-                  <td>4名</td>
+                  <td>10名 ※業務委託も含む</td>
                 </tr>
                 <tr>
                   <th>主な取引銀行</th>
@@ -71,8 +71,7 @@
                 食からライフライン、ライフスタイルに亘る<br>
                 領域において、革新的なソリューションを通じ、<br>
                 ステークホルダーとお客様から期待を凌駕する<br>
-                付加価値を提供し、<br>
-                持続可能な成長を追求する総合商社となります
+                付加価値を提供し、持続可能な成長を追求する<br>総合商社となります
               </p>
             </div>
             <div class="philosophy_card mission">
@@ -87,7 +86,7 @@
 
             <div class="philosophy_card values">
               <div class="philosophy_label">Values</div>
-              <h3>誠実に、早く、正確に<br>信頼を礎に、価値を磨き続ける</h3>
+              <h3>誠実に、早く、正確に信頼を礎に、<br>価値を磨き続ける</h3>
               <ul>
                 <li>品質・品格と信頼性</li>
                 <li>お客様中心主義</li>
@@ -100,7 +99,7 @@
           </div>
         </div>
           <div class="history_container fadein">
-            <p id="company-history" style="padding-top: 3rem;"></p>
+            <p id="company-history"></p>
             <div class="history_title_container title_container">
               <h1>沿革 <span>History</span></h1>
               <p>伝統とともに歩み、革新へつないできた軌跡</p>

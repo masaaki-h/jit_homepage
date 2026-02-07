@@ -4,8 +4,6 @@
       <div class="title_container">
         <h1>採用情報<span>Careers</span></h1>
         <p>
-        見えないところから、<br>
-        世界の「当たり前」と、次の成長を支える。<br><br>
         JIT(JAPAN INTER TRADING) では、<br>
         事業に寄り添い、価値を育てる仲間を募集しています。
         </p>
@@ -13,6 +11,7 @@
     </section>
     <section class="recruit_intro_section fadein">
       <div class="recruit_intro_inner hover_three">
+      <h2>「一人ひとりの仕事が、事業の未来をつくる。」</h2>
         <p>
           私たちの仕事は、派手ではありません。<br>
           けれど、一つひとつの判断や仕事が、<br>
@@ -32,7 +31,6 @@
           誠実さと柔軟さを大切にし、相手の立場に立って考えられる人とともに、<br>
           JIT の次の10年をつくっていきたいと考えています。
         </p>
-        <h2>「一人ひとりの仕事が、事業の未来をつくる。」</h2>
         <p id="recruit-positions"></p>
       </div>
     </section>
@@ -47,7 +45,7 @@
         <!-- 営業職 -->
         <div class="recruit_card hover_three">
           <div class="recruit_tag mid">中途採用</div>
-          <h3>海外/国内営業<br>（総合職/中途採用）</h3>
+          <h3>海外/国内営業（総合職）</h3>
           <p class="recruit_lead">
             事業の最前線で、価値と信頼をつなぐ。
           </p>
@@ -75,7 +73,7 @@
         <!-- 海外営業 -->
         <div class="recruit_card hover_three">
           <div class="recruit_tag mid">中途採用</div>
-          <h3>営業/貿易サポート担当<br>（事務職/中途採用）</h3>
+          <h3>営業/貿易サポート（事務職）</h3>
           <p class="recruit_lead">
             現場を支え、事業の精度を高める。
           </p>
@@ -102,8 +100,8 @@
 
         <!-- バックオフィス -->
         <div class="recruit_card hover_three">
-          <div class="recruit_tag office">バックオフィス</div>
-          <h3>経理担当<br>（事務職/中途採用）</h3>
+        <div class="recruit_tag mid">中途採用</div>
+          <h3>経理担当（事務職）</h3>
           <p class="recruit_lead">
             数字で、事業の持続性を支える。
           </p>

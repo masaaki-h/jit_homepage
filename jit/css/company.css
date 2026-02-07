@@ -1,12 +1,11 @@
 .top_title_container{
     width: 80%;
-    margin: 0 auto;
-    padding-top: 5rem;
+    margin: 5rem auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(0, 91, 172, 0.08);
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 .title_container{
     width: 100%;
@@ -28,7 +27,7 @@
 .title_container p {
     font-size: 1.4rem;
     color: #555;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .title_container span {
@@ -42,7 +41,8 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    padding: 0 15%;
+
+    margin-top: 2rem;
 }
 .profile_card {
     position: relative;
@@ -95,15 +95,14 @@
 
 .philosophy_container {
     display: flex;
-    height: 55vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
     text-align: center;
-    padding-top: 5rem;
+    margin: 10rem 0 0;
 }
 .philosophy_card_container {
+    width: 95%;
     display: flex;
     gap: 2.2rem;
 }
@@ -180,7 +179,8 @@
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    padding: 5rem 10%;
+    padding: 0 10%;
+    margin: 10rem 0 6rem 0;
 }
 .history_item_container {
     width: 100%;
@@ -256,7 +256,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10% 5rem ;
+    padding: 0 10%;
+    margin: 10rem 0 6rem 0;
 }
 .president_content_container {
     width: 100%;

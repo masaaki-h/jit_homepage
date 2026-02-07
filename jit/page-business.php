@@ -55,35 +55,15 @@
       </div>
       <div class="business_card_container">
         <div class="business_card hover_three">
-          <div class="business_label">EXPORT</div>
-          <h3>輸出事業</h3>
-          <p class="business_subtitle">日本の強みと伝統・革新を、世界の市場へ。</p>
-          <p class="business_lead">
-            日本製の食品・日用品を中心に、<br>
-            アジア・中東、欧米など海外市場へ展開しています。<br><br>
-            現地ニーズを踏まえた商品提案から、<br>
-            ラベル・仕様のローカライズ、<br>
-            海外パートナーとの協業による販路開拓まで、<br>
-            長期的な市場定着を見据えた輸出を支援します。<br><br>
-          </p>
-          <p class="business_subtitle">主な取り組み</p>
-          <ul>
-            <li>現地ニーズに合わせた商品提案</li>
-            <li>ラベル・仕様のローカライズ対応</li>
-            <li>海外パートナーとの共同プロモーション</li>
-            <li>継続的な取引を見据えた販路設計</li>
-          </ul>
-        </div>
-        <div class="business_card hover_three">
           <div class="business_label">IMPORT</div>
           <h3>輸入事業</h3>
           <p class="business_subtitle">世界の価値を見極め、日本市場へつなぐ。</p>
           <p class="business_lead">
-            アジア・欧州を中心に、<br>
+            アジア・欧州を中心に、
             世界各地の食品・飲料・原料を日本市場へ届けています。<br><br>
-            海外メーカーとの直接取引を通じ、<br>
-            商品選定から条件調整、品質・表示・法令確認、<br>
-            輸入通関、在庫・物流の最適化まで、<br>
+            海外メーカーとの直接取引を通じ、
+            商品選定から条件調整、品質・表示・法令確認、
+            輸入通関、在庫・物流の最適化まで、
             安心・透明性を重視した輸入体制を構築します。<br><br>
           </p>
           <p class="business_subtitle">主な取り組み</p>
@@ -95,16 +75,35 @@
           </ul>
         </div>
         <div class="business_card hover_three">
+          <div class="business_label">EXPORT</div>
+          <h3>輸出事業</h3>
+          <p class="business_subtitle">日本の強みと伝統・革新を、世界の市場へ。</p>
+          <p class="business_lead">
+            日本製の食品・日用品を中心に、
+            アジア・中東、欧米など海外市場へ展開しています。<br><br>
+            現地ニーズを踏まえた商品提案から、ラベル・仕様のローカライズ、
+            海外パートナーとの協業による販路開拓まで、
+            長期的な市場定着を見据えた輸出を支援します。<br><br>
+          </p>
+          <p class="business_subtitle">主な取り組み</p>
+          <ul>
+            <li>現地ニーズに合わせた商品提案</li>
+            <li>ラベル・仕様のローカライズ対応</li>
+            <li>海外パートナーとの共同プロモーション</li>
+            <li>継続的な取引を見据えた販路設計</li>
+          </ul>
+        </div>
+        <div class="business_card hover_three">
           <div class="business_label">PROMOTION & SUPPORT</div>
           <h3>販売促進・事業サポート</h3>
           <p class="business_subtitle">「取引して終わり」にしない、成長支援。</p>
           <p class="business_lead">
             商品が市場に届いたその先まで。<br>
-            試食会やキャンペーンなどの店頭施策、<br>
-            売場レイアウト・陳列提案、<br>
-            SNSやデジタルを活用した情報発信を通じて、<br>
+            試食会やキャンペーンなどの店頭施策、
+            売場レイアウト・陳列提案、
+            SNSやデジタルを活用した情報発信を通じて、
             販売の現場を支援します。<br><br>
-            販売データをもとにした改善提案を行い、<br>
+            販売データをもとにした改善提案を行い、
             取引先とともに、持続的な事業成長を目指します。<br><br>
           </p>
           <p class="business_subtitle">主な取り組み</p>

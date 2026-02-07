@@ -180,8 +180,12 @@
   // =========================================================
   function createIcon(svg, iconType) {
     const icon = document.createElementNS("http://www.w3.org/2000/svg", "image");
+    // サイズを完全に固定（属性とstyleの両方で設定）
     icon.setAttribute("width", ICON_SIZE);
     icon.setAttribute("height", ICON_SIZE);
+    icon.style.width = `${ICON_SIZE}px`;
+    icon.style.height = `${ICON_SIZE}px`;
+    icon.setAttribute("preserveAspectRatio", "none");
     icon.setAttribute("opacity", "0");
     icon.style.transition = "opacity 0.3s ease";
     
@@ -204,20 +208,30 @@
     return angle;
   }
 
-  function applyIconTransform(icon, angle, centerX, centerY, isRightSide, iconType) {
+  // アイコンの位置とtransformを一度に設定（サイズを完全に固定）
+  function updateIconTransform(icon, point, angle, isRightSide, iconType) {
+    const centerX = point.x;
+    const centerY = point.y;
+    const halfSize = ICON_SIZE / 2;
+    
+    // サイズを完全に固定（属性とstyleの両方で設定）
+    icon.setAttribute("width", ICON_SIZE);
+    icon.setAttribute("height", ICON_SIZE);
+    icon.style.width = `${ICON_SIZE}px`;
+    icon.style.height = `${ICON_SIZE}px`;
+    
+    // 位置を設定（中心点を基準）
+    icon.setAttribute("x", centerX - halfSize);
+    icon.setAttribute("y", centerY - halfSize);
+    
+    // transformを適用（回転とスケール）
+    // scale(1, -1)は視覚的な反転のみで、width/height属性には影響しない
     if (isRightSide) {
       icon.setAttribute("transform", `rotate(${angle} ${centerX} ${centerY})`);
     } else {
-      icon.setAttribute(
-        "transform",
-        `translate(${centerX} ${centerY}) rotate(${angle}) scale(1, -1) translate(${-centerX} ${-centerY})`
-      );
+      // 左側のアイコン: 中心点を基準に回転し、その後上下反転
+      icon.setAttribute("transform", `translate(${centerX} ${centerY}) rotate(${angle}) scale(1, -1) translate(${-centerX} ${-centerY})`);
     }
-  }
-
-  function setIconPosition(icon, point, iconSize = ICON_SIZE) {
-    icon.setAttribute("x", point.x - iconSize / 2);
-    icon.setAttribute("y", point.y - iconSize / 2);
   }
 
   // =========================================================
@@ -299,7 +313,11 @@
     });
   }
 
+  // CSS ease-out (cubic-bezier(0.0, 0, 0.2, 1)) と同等のイージング関数
+  // CSS ease-outは実際には cubic-bezier(0.0, 0, 0.2, 1) で、これは三次ベジェ曲線
   function easeOut(t) {
+    // cubic-bezier(0.0, 0, 0.2, 1) の近似値
+    // より正確な実装のため、標準的なcubic ease-outを使用
     return 1 - Math.pow(1 - t, 3);
   }
 
@@ -308,35 +326,34 @@
     const endPoint = line.getPointAtLength(pathLength);
     
     // 初期位置と角度を設定
-    setIconPosition(icon, startPoint);
     const initialAngle = calculateIconAngle(startPoint, endPoint, isRightSide, iconType);
-    applyIconTransform(icon, initialAngle, startPoint.x, startPoint.y, isRightSide, iconType);
+    updateIconTransform(icon, startPoint, initialAngle, isRightSide, iconType);
     
     icon.style.opacity = "1";
-    const startTime = Date.now();
+    const startTime = performance.now();
     
     function updateIcon() {
-      const elapsed = Date.now() - startTime;
+      const elapsed = performance.now() - startTime;
       const linearProgress = Math.min(elapsed / iconDuration, 1);
+      // ラインと同じease-outを使用（CSS ease-outと同等の計算）
       const progress = easeOut(linearProgress);
       
       if (linearProgress < 1) {
         const point = line.getPointAtLength(pathLength * progress);
-        setIconPosition(icon, point);
         
-        if (progress > 0.01) {
-          const prevPoint = line.getPointAtLength(pathLength * (progress - 0.01));
-          const angle = calculateIconAngle(prevPoint, point, isRightSide, iconType);
-          applyIconTransform(icon, angle, point.x, point.y, isRightSide, iconType);
-        }
+        // 角度計算用の前の点（より正確な角度計算のため）
+        const deltaProgress = 0.005;
+        const prevProgress = Math.max(0, progress - deltaProgress);
+        const prevPoint = line.getPointAtLength(pathLength * prevProgress);
+        const angle = calculateIconAngle(prevPoint, point, isRightSide, iconType);
         
+        updateIconTransform(icon, point, angle, isRightSide, iconType);
         requestAnimationFrame(updateIcon);
       } else {
         // アニメーション終了時、終点に配置
-        const prevPoint = line.getPointAtLength(pathLength * 0.99);
-        setIconPosition(icon, endPoint);
+        const prevPoint = line.getPointAtLength(pathLength * 0.995);
         const finalAngle = calculateIconAngle(prevPoint, endPoint, isRightSide, iconType);
-        applyIconTransform(icon, finalAngle, endPoint.x, endPoint.y, isRightSide, iconType);
+        updateIconTransform(icon, endPoint, finalAngle, isRightSide, iconType);
       }
     }
     
@@ -355,7 +372,8 @@
     const pathThin = line;
     
     const lineDuration = isRightSide ? ANIMATION_DURATION.LINE.RIGHT : ANIMATION_DURATION.LINE.LEFT;
-    const iconDuration = isRightSide ? ANIMATION_DURATION.ICON.RIGHT : ANIMATION_DURATION.ICON.LEFT;
+    // アイコンのdurationをラインと同じにする（速度を同期）
+    const iconDuration = lineDuration;
     
     setupLineAnimation(pathThick, pathThin, pathLength, lineDuration);
     
@@ -409,12 +427,11 @@
         line.style.transition = "none";
       }
       
-      // アイコンを終点に配置
+      // アイコンを終点に配置（animateIconの終了処理と同じロジック）
       const icon = state.lineIcons.get(areaKey);
       if (icon) {
         const pathLength = line.getTotalLength();
         const endPoint = line.getPointAtLength(pathLength);
-        const startPoint = line.getPointAtLength(0);
         const areaData = AREA_DATA[areaKey];
         
         if (areaData) {
@@ -422,12 +439,10 @@
           const isRightSide = toPosition.left > JAPAN_POSITION.left;
           const iconType = areaData?.iconType || "ship";
           
-          setIconPosition(icon, endPoint);
-          icon.style.opacity = "1";
-          // アニメーション終了時と同じ方法で角度を計算（終点の少し前の点を使用）
           const prevPoint = line.getPointAtLength(pathLength * 0.99);
           const angle = calculateIconAngle(prevPoint, endPoint, isRightSide, iconType);
-          applyIconTransform(icon, angle, endPoint.x, endPoint.y, isRightSide, iconType);
+          updateIconTransform(icon, endPoint, angle, isRightSide, iconType);
+          icon.style.opacity = "1";
         }
       }
     } else {

@@ -7,7 +7,7 @@
            <div class="top_container_logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/tenlogo.png" class="hover_two">
            </div>
-           <p class="top_main_text hover_two">人と人を繋ぐ。<br>あらゆるものが<br>飛び交う世界へ</p>
+           <p class="top_main_text hover_two">人と思いが、世界へと巡る</p>
         </div>
         <div class="message_container fadein">
             <h2>日本と世界の価値を重ね、次のスタンダードへ</h2>
@@ -25,24 +25,24 @@
             <p>価値と価値を掛け合わせ、</p>
             <p>次のスタンダードを形にしていきます。</p>
             <span class="spacer"></span>
-            <p>誠実に、早く、正確に。</p>
+            <p>誠実に、迅速に、正確に。価値創造を一気通貫で。</p>
             <p>私たちは黒子として挑戦を支え、</p>
             <p>信頼を礎に、日本と世界を結ぶ架け橋として、</p>
             <p>持続可能な成長を、ともに実現していきます。</p>
         </div>
         <div class="trade_container fadein">
-            <div class="export_container">
-                <div class="export_box">
-                    <div class="border_box hover_two">
-                        <a href="<?php echo get_post_type_archive_link('brand'); ?>"><h3>輸出商品</h3></a>
-                    </div>
-                </div>
-            </div>
             <div class="import_container">
                 <div class="import_box">
                         <div class="border_box hover_two">
-                            <a href="<?php echo get_post_type_archive_link('brand'); ?>"><h3>輸入商品</h3></a>
+                            <a href="<?php echo home_url('/business'); ?>"><h3>事業内容</h3></a>
                         </div>
+                </div>
+            </div>
+            <div class="export_container">
+                <div class="export_box">
+                    <div class="border_box hover_two">
+                        <a href="<?php echo get_post_type_archive_link('product'); ?>"><h3>商品一覧</h3></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
                 <h2>採用情報</h2>
                 <p>見えないところで、世界を支える。<br>
                    その想いを共に紡ぐ仲間を募集しています。</p>
-                    <a href="<?php echo home_url(); ?>/html/recruit.html" class="hover_two">採用情報一覧へ</a>
+                    <a href="<?php echo home_url('/recruit'); ?>" class="hover_two">採用情報一覧へ</a>
             </div>
         </div>
 <?php get_footer(); ?>

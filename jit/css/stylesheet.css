@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
     scroll-behavior: smooth;
 }
 html {
@@ -12,8 +12,8 @@ body {
     font-family: 'Times New Roman', serif;
     line-height: 1.6;
     background: linear-gradient(to right, #f5f8fc, #ffffff);
-    width: 1400px;
-    max-width: 1400px;
+    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -76,7 +76,7 @@ html{
 }
 header{
     position: fixed;
-    width: 1400px;
+    width: 1200px;
     left: 50%;
     transform: translateX(-50%);
     color: #333;
@@ -197,13 +197,13 @@ nav{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .top_img{
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
 }
 .top_img img.sp_none{
     width: 100%;
-    height: 80vh;
+    height: 800px;
     object-fit: cover;
     object-position: center 50%;
     margin: 0 auto;
@@ -214,9 +214,9 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: visible;
@@ -234,40 +234,29 @@ nav{
     z-index: 1;
 }
 .top_container_logo{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
-    width: 100%;
-    text-align: center;
+    flex-shrink: 0;
 }
 .top_container_logo img{
     width: 200px;
     filter: brightness(0) invert(1) drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
     z-index: 0;
-    margin: 0 auto;
     display: block;
 }
 .top_main_text{
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 4rem !important;
+    font-size: 2rem !important;
     color: #fff !important;
     text-shadow: 3px 3px 12px rgba(0,0,0,0.6);
     cursor: default;
-    text-align: center;
+    text-align: left;
     line-height: 1.8;
     font-weight: normal;
     letter-spacing: 0.1rem;
-    margin-top: 0;
+    margin: 0;
     z-index: 1;
-    width: 100%;
 }
 .top_main_text:hover{
-    transform: translateX(-50%) translateY(-2px) !important;
+    transform: translateY(-2px);
 }
 .top_container p{
     font-size: 2rem;
@@ -276,11 +265,10 @@ nav{
     cursor: default;
 }
 .message_container{
-    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 5rem 0;
     font-size: 1.6rem;
     text-align: center;
     color: #666;
@@ -306,7 +294,7 @@ nav{
 }
 .trade_container{
     width: 100%;
-    height: 55vh;
+    height: 550px;
     display: flex;
     background-image: url(../img/trade.jpg);
 }
@@ -413,7 +401,7 @@ nav{
 }
 .recruit_container{
     width: 100%;
-    height: 55vh;
+    height: 550px;
     display: flex;
 }
 .recruit_left_box{
@@ -649,7 +637,7 @@ a[href^="mailto"]:hover {
   /* ------ TOP画像（スマホ用） ------ */
   .top_img img {
     width: 100%;
-    height: 60vh;
+    height: 600px;
     padding-top: 7rem;
     object-fit: cover;
     object-position: center 0%;
@@ -660,11 +648,13 @@ a[href^="mailto"]:hover {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 90vh;
+    height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
   }
 
   .top_anniversary {
@@ -674,32 +664,21 @@ a[href^="mailto"]:hover {
     opacity: 0.7;
   }
 
-  .top_container_logo {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .top_container_logo img {
-    width: 13rem;
+    width: 10rem;
     height: auto;
   }
 
   .top_main_text {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.6;
     font-weight: normal;
-    margin-top: 0;
+    margin: 0;
   }
 
   .top_container p {
     font-size: 1.8rem;
-    margin-top: 2rem;
+    margin: 0;
   }
 
   /* ------ MESSAGE ------ */
@@ -723,7 +702,7 @@ a[href^="mailto"]:hover {
   .import_container,
   .export_container {
     width: 100%;
-    height: 25vh;
+    height: 250px;
   }
   .border_box h3 {
     font-size: 2rem;
@@ -767,7 +746,7 @@ a[href^="mailto"]:hover {
 
   .recruit_left_box {
     width: 100%;
-    height: 25vh;
+    height: 250px;
   }
 
   .recruit_right_box {

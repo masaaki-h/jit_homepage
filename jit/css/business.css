@@ -26,8 +26,8 @@
   cursor: pointer;
 }
 .business_intro_card {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 10rem auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,14 +81,13 @@
   margin-top: 0.15rem;
 }
 .business_card_section{
-  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin: 6rem 0 0;
 }
 .business_card_container{
-  width: 80%;
+  width: 95%;
   display:flex;
   gap:3rem;
 }
@@ -158,23 +157,22 @@
   margin-bottom:0.3rem;
 }
 .global_network_section{
-  height: 75vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 6rem 0 0;
 }
 .global_network_section .title_container{
   margin-top: 0;
 }
 .global_map_container{
-  max-width: 1200px;
-  margin: 1.5rem auto 0;
+  max-width: 1000px;
+  margin: 2rem auto 0;
   padding: 0 1.5rem;
 }
 .global_map{
   width:100%;
-  height:55vh;
+  height:550px;
   object-fit:cover;
   border-radius:1.2rem;
   box-shadow:0 12px 32px rgba(0,0,0,0.06);
@@ -226,13 +224,12 @@
 }
 .business_cta_inner{
   width: 80%;
-  margin:0 auto;
+  margin: 10rem auto 6rem;
   text-align:center;
   padding:3rem;
   border-radius:1.6rem;
   background:linear-gradient(135deg, #005bac0d, #f5f8ff);
   border:1px solid rgba(0,91,172,0.16);
-  margin-bottom: 5rem;
   transition: all 0.25s ease;
   cursor: default;
 }
@@ -279,7 +276,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(../img/value_chain.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -312,12 +308,11 @@
 
 
 .business_bridge_section {
-  height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   z-index: 2;
+  margin: 6rem 0 0;
 }
 
 .business_bridge_section > * {
@@ -331,11 +326,11 @@
 
 .bridge_panel {
   width: 80%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 2rem auto 0;
   padding: 3rem 3rem 2.4rem;
   border-radius: 1.6rem;
-  background: linear-gradient(to bottom, rgba(0, 91, 172, 0.05), rgba(245, 248, 255, 0.3));
+  background: linear-gradient(to bottom, rgba(0, 91, 172, 0.05), rgb(228 236 255 / 30%));
   border: 1px solid rgba(0, 91, 172, 0.16);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.05);
 }
@@ -376,7 +371,7 @@
   min-width: 0;
   background: #ffffff;
   border-radius: 1.2rem;
-  padding: 1.1rem 0.8rem 1.2rem;
+  padding: 1.1rem 0.4rem 1.2rem;
   text-align: center;
   border: 1px solid rgba(0, 91, 172, 0.14);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
@@ -427,8 +422,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
-  padding: 0 0 5rem 0;
+  margin: 10rem 0 6rem 0;
   position: relative;
   z-index: 2;
 }
@@ -459,7 +453,7 @@
 
 .value_support_container {
   width: 80%;
-  max-width: 1100px;
+  max-width: 970px;
   margin: 2rem auto 0;
   padding: 0 1.5rem;
   display: grid;
@@ -949,7 +943,7 @@
   }
 
   .global_map {
-    height: 30vh;
+    height: 300px;
   }
 
   .global_caption {
