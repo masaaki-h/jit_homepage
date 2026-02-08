@@ -1,8 +1,8 @@
 <footer class="fadein">
             <div class="footer_top_container">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
-                <h3>JAPAN INTER TRADING 株式会社</h3>
-                <p>〒103-0022 東京都中央区日本橋室町１丁目２−６<span>TEL: <a href="tel:0362816410">03-6281-6410</a></span></p>
+                <h3>ジャパン・インタートレーディング株式会社</h3>
+                <p>〒103-0022 東京都中央区日本橋室町１丁目２−６</p>
             </div>
             <div class="footer_bottom_container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6895088993983!2d139.7738574!3d35.6846465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2d52b8eaf71%3A0x1e047b7a7e270295!2z44K444Oj44OR44Oz772l44Kk44Oz44K_44O844OI44Os44O844OH44Kj44Oz44Kw44ix!5e0!3m2!1sja!2sjp!4v1762247644899!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -166,6 +166,36 @@
         <?php if (is_page('business')) : ?>
         <script src="<?php echo get_template_directory_uri(); ?>/js/business.js" defer></script>
         <?php endif; ?>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btn = document.querySelector(".history_more_btn");
+            var wrapper = document.querySelector(".history_more_wrapper");
+            if (!btn || !wrapper) return;
+            btn.addEventListener("click", function() {
+                var isOpen = wrapper.classList.toggle("is-open");
+                btn.classList.toggle("is-open", isOpen);
+                btn.textContent = isOpen ? "閉じる" : "続きを見る";
+            });
+        });
+        </script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.addEventListener("click", function(e) {
+                var btn = e.target && e.target.closest && e.target.closest(".recruit_card_more_btn");
+                if (!btn) return;
+                var accordion = btn.closest(".recruit_card_accordion");
+                if (!accordion) return;
+                e.preventDefault();
+                var isOpen = accordion.classList.toggle("is-open");
+                var card = accordion.closest(".recruit_card");
+                if (card) card.classList.toggle("is-open", isOpen);
+                btn.setAttribute("aria-expanded", isOpen);
+                btn.textContent = isOpen ? "閉じる" : "続きを見る";
+            });
+        });
+        </script>
 
         <script src="<?php echo get_template_directory_uri(); ?>/js/common.js" defer></script>
         <?php wp_footer(); ?>

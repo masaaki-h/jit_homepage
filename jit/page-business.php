@@ -4,30 +4,45 @@
       <div class="title_container">
         <h1>事業内容<span>Business</span></h1>
         <p>
-          世界の「食」と「人」をつなぐ専門商社として、<br>
-          輸入・輸出・販売促進まで一気通貫でサポートします。
+          商品販売・製造・物流・事業開発まで、一貫して伴走サポートいたします。
         </p>
       </div>
     </div>
     <div class="business_intro_card fadein hover_three">
       <div class="business_intro_left">
-        <h2>食のプロフェッショナルとして、<br>見えないところから価値を動かす。</h2>
+        <h2>食を起点に、価値創造・事業成長を支えるパートナー</h2>
         <p>
-          JAPAN INTER TRADING は、日本と世界を結ぶ「食の架け橋」として、<br>
-          商品選定・品質管理・物流・販売促進までをトータルで支援する食品商社です。
+          JIT(JAPAN INTER TRADING) は、<br>
+          食を中心に、流通、ウェルネス、事業開発までを手がける<br>
+          グローバルに事業を展開する商社です。
         </p>
         <p>
-          大手にはない柔軟さとスピード感で、ニッチなニーズにも対応し、<br>
-          パートナー企業の“黒子”として価値創造を支えます。
+          世界に広がるネットワークと情報を活かし、<br>
+          商品企画・調達から、物流、販売支援、事業構築まで、<br>
+          各プロセスを一貫してサポートしています。
+        </p>
+        <p>
+          食料、流通、ウェルネス、コーポレートディベロップメントなど<br>
+          各分野において、多様な商品の取り扱いを行うとともに、<br>
+          それを支えるロジスティクスや品質管理の体制構築、<br>
+          さらには国際的なプロジェクトや事業開発の支援まで、<br>
+          幅広いサービスを提供しています。
+        </p>
+        <p>
+          企業規模や業界を問わず、<br>
+          それぞれのパートナーが持つ伝統、強みや課題に向き合いながら<br>
+          持続的な価値創造と事業成長を通して共存・共栄することを<br>
+          大切にしています。
         </p>
         <span id="business-core"></span>
       </div>
       <div class="business_intro_right">
         <ul>
-          <li><i class="fa-solid fa-check"></i> 世界各国の食品・飲料の輸入</li>
-          <li><i class="fa-solid fa-check"></i> 日本発ブランドの輸出・現地展開</li>
-          <li><i class="fa-solid fa-check"></i> ODM / OEM を含む商品企画・開発</li>
-          <li><i class="fa-solid fa-check"></i> 売場づくり・プロモーションのサポート</li>
+          <li><i class="fa-solid fa-check"></i> 世界各国の食品・飲料・原料の輸入・販売及びマーケティング</li>
+          <li><i class="fa-solid fa-check"></i> 日本発ブランドの海外展開、現地市場での展開・販売支援及び<br>マーケティング</li>
+          <li><i class="fa-solid fa-check"></i> ODM / OEM を含む商品企画・開発の支援</li>
+          <li><i class="fa-solid fa-check"></i> ロジスティクス設計、品質管理、流通体制の構築支援</li>
+          <li><i class="fa-solid fa-check"></i> 国際プロジェクトおよび事業開発に関する支援</li>
         </ul>
       </div>
     </div>
@@ -36,43 +51,64 @@
       
       <div class="title_container">
         <h1>事業領域<span>Core Business</span></h1>
-        <p>輸入・輸出・販売促進を軸に、ワンストップで価値を届けます。</p>
+        <p>輸入・輸出・販売促進・事業開発を軸に、事業成長をワンストップで支える。</p>
       </div>
       <div class="business_card_container">
         <div class="business_card hover_three">
-          <div class="business_tag import">Import</div>
+          <div class="business_label">IMPORT</div>
           <h3>輸入事業</h3>
+          <p class="business_subtitle">世界の価値を見極め、日本市場へつなぐ。</p>
           <p class="business_lead">
-            欧州・アジアを中心に、世界中の魅力ある食品・飲料を日本へ。
+            アジア・欧州を中心に、
+            世界各地の食品・飲料・原料を日本市場へ届けています。<br>
+            海外メーカーとの直接取引を通じ、
+            商品選定から条件調整、品質・表示・法令確認、
+            輸入通関、在庫・物流の最適化まで、
+            安心・透明性を重視した輸入体制を構築します。<br>
           </p>
+          <p class="business_subtitle">主な取り組み</p>
           <ul>
-            <li>海外メーカーとの直接取引・条件交渉</li>
+            <li>海外メーカーとの直接取引・条件調整</li>
             <li>ODM / OEM を含む商品企画・開発支援</li>
             <li>品質・表示・法令チェック</li>
             <li>輸入通関・在庫・物流の最適化</li>
           </ul>
         </div>
         <div class="business_card hover_three">
-          <div class="business_tag export">Export</div>
+          <div class="business_label">EXPORT</div>
           <h3>輸出事業</h3>
+          <p class="business_subtitle">日本の強みと伝統・革新を、世界の市場へ。</p>
           <p class="business_lead">
-            日本製の食品・日用品を、東南アジア・北米・南米など海外市場へ。
+            日本製の食品・日用品を中心に、
+            アジア・中東、欧米など海外市場へ展開しています。<br>
+            現地ニーズを踏まえた商品提案から、ラベル・仕様のローカライズ、
+            海外パートナーとの協業による販路開拓まで、
+            長期的な市場定着を見据えた輸出を支援します。<br>
           </p>
+          <p class="business_subtitle">主な取り組み</p>
           <ul>
             <li>現地ニーズに合わせた商品提案</li>
             <li>ラベル・仕様のローカライズ対応</li>
             <li>海外パートナーとの共同プロモーション</li>
-            <li>長期的な売場定着を見据えた取引設計</li>
+            <li>継続的な取引を見据えた販路設計</li>
           </ul>
         </div>
         <div class="business_card hover_three">
-          <div class="business_tag promotion">Promotion</div>
-          <h3>販売促進・サポート</h3>
+          <div class="business_label">PROMOTION & SUPPORT</div>
+          <h3>販売促進・事業サポート</h3>
+          <p class="business_subtitle">「取引して終わり」にしない、成長支援。</p>
           <p class="business_lead">
-            「仕入れて終わり」にしない。売場づくりまで伴走する黒子の仕事。
+            商品が市場に届いたその先まで。<br>
+            試食会やキャンペーンなどの店頭施策、
+            売場レイアウト・陳列提案、
+            SNSやデジタルを活用した情報発信を通じて、
+            販売の現場を支援します。<br>
+            販売データをもとにした改善提案を行い、
+            取引先とともに、持続的な事業成長を目指します。<br>
           </p>
+          <p class="business_subtitle">主な取り組み</p>
           <ul>
-            <li>試食会・キャンペーンなど店頭プロモーション</li>
+            <li>試食会・キャンペーンなどの店頭プロモーション</li>
             <li>売場レイアウト・陳列提案</li>
             <li>SNS / デジタルを活用した情報発信</li>
             <li>販売データをもとにした改善提案</li>
@@ -80,16 +116,19 @@
         </div>
       </div>
     </section>
-    <p id="business-network" style="padding-top: 3.5rem;"></p>
     <!-- Global Network -->
     <section class="global_network_section fadein" id="business-network">
       <div class="title_container">
         <h1>グローバルネットワーク<span class="globalnetwork">Global Network</span></h1>
-        <p>日本を起点に、欧州・アジア・北米・南米へとネットワークを拡大しています。</p>
+        <p>日本を起点に、アジア・中東、欧米へとネットワークを拡大しております。</p>
       </div>
 
       <div class="global_map_container hover_three">
         <div class="trade-map" id="tradeMap">
+          <div class="trade-map-text-wrapper">
+            <p class="trade-map-text">世界を巡り、価値を見つけ、次の市場へつなぐ。</p>
+            <p class="trade-map-text-en">Exploring, Connecting, Growing Through Value</p>
+          </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/trade.jpg" alt="世界ネットワーク" class="global_map">
 
           <!-- Hotspots are dynamically generated by JavaScript -->
@@ -126,8 +165,8 @@
     </section>
     <!-- ===== Flow ===== -->
          <!-- ===== Upstream → Downstream：食のバリューチェーン ===== -->
+    <div class="business_chain_wrapper">
     <section class="business_bridge_section fadein">
-       <p id="business-valuechain" style="padding-top: 4rem;"></p>
       <div class="title_container">
         <h1>バリューチェーン<span>Value Chain</span></h1>
         <p>
@@ -241,22 +280,116 @@
       </div>
       <p id="business-flow"></p>
     </section>
+
+    <section class="business_value_support_section fadein">
+      <div class="title_container">
+        <h1>JIT Value Support<span>価値創造・成長支援（横断機能）</span></h1>
+        <p>
+          JIT（JAPAN INTER TRADING）は、
+          輸入・輸出・三国間取引といった商流・物流の実行に加え、<br>
+          以下の機能を横断的に担うことで、
+          取引先の持続的な価値創造と事業成長を支援します。
+        </p>
+      </div>
+
+      <div class="value_support_container">
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Supply Chain Design</div>
+            <h3>サプライチェーン設計・最適化</h3>
+            <p>
+              物流、在庫、輸送手段、リードタイム、コストのバランスを考慮し、
+              商流全体を見渡したサプライチェーンの設計・最適化を行います。<br>
+              安定供給と効率性の両立を図り、
+              事業の継続性と競争力の向上を支えます。
+            </p>
+          </div>
+        </div>
+
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Marketing & Sales Support</div>
+            <h3>マーケティング・販売支援</h3>
+            <p>
+              市場や顧客ニーズを踏まえた商品提案に加え、
+              売場づくり、販促施策、デジタルを活用した情報発信などを通じて、
+              商品が市場に定着し、継続的に選ばれる仕組みを支援します。
+            </p>
+          </div>
+        </div>
+
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Quality & Compliance</div>
+            <h3>品質管理・法令対応</h3>
+            <p>
+              品質基準の確認、表示・法令のチェック、
+              各国規制への対応などを通じて、
+              安心・安全な商品提供とリスク管理を支えます。<br>
+              透明性の高い体制構築により、
+              取引先との信頼関係を大切にしています。
+            </p>
+          </div>
+        </div>
+
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Business Design & Development</div>
+            <h3>事業設計・事業開発支援</h3>
+            <p>
+              商流・物流・販売チャネルを組み合わせ、
+              取引条件や市場特性に応じた事業スキームを設計します。<br>
+              新規市場や新たなチャネルへの展開を含め、
+              中長期的な視点で事業の成長と発展を支援します。
+            </p>
+          </div>
+        </div>
+        
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Business Renewal & Transformation Support</div>
+            <h3>事業再生・構造転換支援</h3>
+            <p>
+              市場環境や事業構造の変化に直面する企業に対し、
+              事業の再設計、サプライチェーンの見直し、
+              パートナー連携や資本構成の最適化を通じて、
+              事業再生や次の成長フェーズへの移行を支援します。<br>
+              既存の強みを活かしながら、
+              持続可能な事業モデルへの転換を目指します。
+            </p>
+          </div>
+  
+        </div>
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Capital & Strategic Alliance Support</div>
+            <h3>資本・アライアンス支援</h3>
+            <p>
+              成長段階や課題に応じ、出資・株式持ち合い・M&A など資本面での支援を行います。<br>
+              金融的な投資を目的とするものではなく、事業の実行と成長を前提とした事業投資として、事業運営に寄り添い、価値向上と中長期成長をともに目指します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
     <section class="business_flow_section fadein">
       <div class="title_container">
         <h1>お取引の流れ<span>Flow</span></h1>
-        <p>課題のヒアリングから商品提案・納品・その後のフォローまで、一貫して伴走します。</p>
+        <p>課題のヒアリングから商品・事業スキームの提案、納品、そしてその後の改善・フォローまで、事業に寄り添いながら一貫して伴走します。</p>
       </div>
 
       <div class="flow_step_container">
         <div class="flow_step hover_three">
           <div class="flow_number">01</div>
           <h3>ヒアリング</h3>
-          <p>ターゲット・販売チャネル・ご予算などを伺い、課題を整理します。</p>
+          <p>ターゲット・販売チャネル・ご予算などを伺い、事業課題や目的を整理します。</p>
         </div>
         <div class="flow_step hover_three">
           <div class="flow_number">02</div>
           <h3>商品・スキーム提案</h3>
-          <p>輸入 / 輸出 / OEM など最適なスキームと商品構成をご提案します。</p>
+          <p>輸入 / 輸出 / OEM など市場や条件に応じた最適な商品・事業スキームをご提案します。</p>
         </div>
         <div class="flow_step hover_three">
           <div class="flow_number">03</div>
@@ -271,7 +404,7 @@
         <div class="flow_step hover_three">
           <div class="flow_number">05</div>
           <h3>販売フォロー</h3>
-          <p>販売状況を踏まえ、追加提案やプロモーション支援を行います。</p>
+          <p>販売状況を踏まえ、改善提案やプロモーション支援を通じて、継続的な事業成長をサポートします。</p>
         </div>
       </div>
     </section>

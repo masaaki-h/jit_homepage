@@ -21,21 +21,25 @@ add_action('wp_enqueue_scripts', function () {
     '6.5.2'
   );
 
-  // ページ別CSS（すべて読み込み）
-  foreach ([
-    'brand.css',
-    'business.css',
-    'company.css',
-    'contact.css',
-    'news.css',
-    'recruit.css',
-  ] as $css) {
-    wp_enqueue_style(
-      'jit-' . str_replace('.css', '', $css),
-      $base . '/css/' . $css,
-      ['jit-stylesheet'],
-      null
-    );
+  // ページ別CSS（表示中のページにだけ読み込み＝競合防止）
+  // スラッグが英語以外の場合は is_page(['recruit','採用情報']) のように追加可能
+  $page_styles = [
+    'company.css'  => function () { return is_page(['company', '会社概要']); },
+    'recruit.css'  => function () { return is_page(['recruit', '採用情報']); },
+    'business.css' => function () { return is_page(['business', '事業内容']); },
+    'contact.css'  => function () { return is_page(['contact', 'お問い合わせ']); },
+    'news.css'     => function () { return is_post_type_archive('news'); },
+    'brand.css'    => function () { return is_post_type_archive('product'); },
+  ];
+  foreach ($page_styles as $css => $condition) {
+    if ($condition()) {
+      wp_enqueue_style(
+        'jit-' . str_replace('.css', '', $css),
+        $base . '/css/' . $css,
+        ['jit-stylesheet'],
+        null
+      );
+    }
   }
 
   // JS

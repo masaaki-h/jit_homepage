@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     fadeTargets.forEach(el => fadeObserver.observe(el));
   }
+
   const scrollLinks = document.querySelectorAll("a[data-scroll]");
   scrollLinks.forEach(link => {
     link.addEventListener("click", e => {
@@ -61,9 +62,108 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   $(function () {
-    $(".fa-bars").on("click", function () {
-      $("nav").toggle(200);
+    let menuOpen = false;
+    let clickHandled = false;
+    
+    $(".fa-bars").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      
+      clickHandled = true;
+      menuOpen = !menuOpen;
+      const nav = $("nav");
+      
+      if (menuOpen) {
+        nav.css("display", "flex");
+      } else {
+        nav.hide(200);
+      }
+      
+      // 次のイベントサイクルまで待つ
+      setTimeout(function() {
+        clickHandled = false;
+      }, 0);
+      
+      return false;
     });
+    
+    // メニュー外をクリックしたときに閉じる（ハンバーガーボタンのクリック時は無視）
+    $(document).on("click", function(e) {
+      if (clickHandled) {
+        return;
+      }
+      
+      if (menuOpen && !$(e.target).closest("nav, .fa-bars, .sp_header").length) {
+        $("nav").hide(200);
+        menuOpen = false;
+      }
+    });
+    
+    // nav内のリンクをクリックしたときに閉じる
+    $("nav a").on("click", function() {
+      setTimeout(function() {
+        $("nav").hide(200);
+        menuOpen = false;
+      }, 100);
+    });
+  });
+
+  // メニューリンクのクリック時にactiveクラスを追加
+  const menuLinks = document.querySelectorAll(".header_left a.under_line, nav a.under_line");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      // 同じ親要素内の他のリンクからactiveクラスとonクラスを削除
+      const parent = this.closest(".header_left") || this.closest("nav");
+      if (parent) {
+        const siblings = parent.querySelectorAll("a.under_line");
+        siblings.forEach(sibling => {
+          sibling.classList.remove("active");
+          sibling.classList.remove("on");
+        });
+      }
+      // クリックしたリンクにactiveクラスを追加
+      this.classList.add("active");
+      
+      // スマホ表示の場合、メニューを閉じる
+      if (window.innerWidth <= 768) {
+        $("nav").hide(200);
+      }
+    });
+  });
+
+  // 現在のページURLに基づいて適切なメニュー項目にactiveクラスを付与
+  const currentPath = window.location.pathname;
+  const allMenuLinks = document.querySelectorAll(".header_left a.under_line, nav a.under_line");
+  
+  // まず全てのonクラスを削除
+  allMenuLinks.forEach(link => {
+    link.classList.remove("on");
+  });
+  
+  // 現在のページに対応するリンクを探す
+  allMenuLinks.forEach(link => {
+    const linkUrl = link.getAttribute("href");
+    if (!linkUrl) return;
+    
+    // リンクのパスを取得（ドメイン部分を除く）
+    const linkPath = new URL(linkUrl, window.location.origin).pathname;
+    
+    // パスが一致するか、または現在のパスがリンクのパスを含む場合
+    if (linkPath === currentPath || 
+        (linkPath !== "/" && currentPath.startsWith(linkPath)) ||
+        (currentPath !== "/" && linkPath.startsWith(currentPath))) {
+      // 同じ親要素内の他のリンクからactiveクラスを削除
+      const parent = link.closest(".header_left") || link.closest("nav");
+      if (parent) {
+        const siblings = parent.querySelectorAll("a.under_line");
+        siblings.forEach(sibling => {
+          sibling.classList.remove("active");
+        });
+      }
+      // 現在のページに対応するリンクにactiveクラスを追加
+      link.classList.add("active");
+    }
   });
   
 });

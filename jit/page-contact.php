@@ -107,11 +107,6 @@
           <p class="contact_tel">TEL: <a href="tel:0362816410">03-6281-6410</a></p>
           <p class="contact_time">受付時間 : 平日 9:00〜18:00（土日祝・年末年始を除く）</p>
         </div>
-        <div class="contact_info_box">
-          <h3>メールでのお問い合せ</h3>
-          <p>MAIL: <a href="mailto:info@example.com">info@example.com</a></p>
-          <p class="contact_info_note">※フォームからのお問い合せ内容は、上記窓口で一元管理しております。</p>
-        </div>
       </div>
     </section>
 <?php get_footer(); ?>

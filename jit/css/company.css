@@ -1,48 +1,12 @@
-.top_title_container{
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 91, 172, 0.08);
-    margin-bottom: 3rem;
-}
-.title_container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.14em;
-    text-align: center;
-    cursor: default;
-}
-.title_container h1{
-    font-size: 2.4rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 1.2rem;
-}
-.title_container p {
-    font-size: 1.4rem;
-    color: #555;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-.title_container span {
-    font-size: 1.2rem;
-    color: #005bac;
-    margin-left: 0.5rem;
-}
+/* 共通タイトルは stylesheet.css で定義。以下は会社概要ページ専用 */
 .profile_card_container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    padding: 0 15%;
+
+    margin-top: 2rem;
 }
 .profile_card {
     position: relative;
@@ -95,21 +59,20 @@
 
 .philosophy_container {
     display: flex;
-    height: 55vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
     text-align: center;
-    padding-top: 5rem;
+    margin: 10rem 0 0;
 }
 .philosophy_card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    display: flex;
     gap: 2.2rem;
 }
 
 .philosophy_card {
+    flex: 1;
     position: relative;
     padding: 2.2rem 2.2rem 2.4rem;
     background: #ffffff;
@@ -177,10 +140,11 @@
 .history_container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+
     padding: 0 10%;
+    margin: 10rem 0 6rem 0;
 }
 .history_item_container {
     width: 100%;
@@ -250,13 +214,56 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
+
+/* 沿革 続きを見る（開閉アニメーション） */
+.history_item_container .history_more_wrapper {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.55s ease-in-out;
+    /* 年月バッジ（left: -3.2rem, width: 6.4rem）が切れないよう左に余白 */
+    margin-left: -10rem;
+    padding-left: 10rem;
+}
+.history_item_container .history_more_wrapper.is-open {
+    max-height: 3000px;
+}
+.history_more_btn_wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+.history_more_btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #005bac;
+    background: #fff;
+    border: 2px solid #005bac;
+    border-radius: 99.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.history_more_btn:hover {
+    color: #fff;
+    background: #005bac;
+}
+.history_more_btn.is-open {
+    border-color: #555;
+    color: #555;
+}
+.history_more_btn.is-open:hover {
+    color: #fff;
+    background: #555;
+    border-color: #555;
+}
+
 .president_container {
     height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 10% 5rem ;
+    padding: 0 10%;
+    margin: 10rem 0 6rem 0;
 }
 .president_content_container {
     width: 100%;
@@ -354,7 +361,6 @@
       ① 会社概要カード（Profile）
      ========================== */
   .profile_card_container {
-    padding: 0 5%;
     text-align: left;
   }
   .profile_card {
@@ -390,7 +396,7 @@
   }
 
   .philosophy_card_container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 1.8rem;
   }
 
@@ -440,6 +446,11 @@
   .history_card {
     margin-left: 0;
     padding: 1.5rem 2rem;
+  }
+
+  .history_item_container .history_more_wrapper {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   /* ==========================
