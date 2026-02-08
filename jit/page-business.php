@@ -60,11 +60,11 @@
           <p class="business_subtitle">世界の価値を見極め、日本市場へつなぐ。</p>
           <p class="business_lead">
             アジア・欧州を中心に、
-            世界各地の食品・飲料・原料を日本市場へ届けています。<br><br>
+            世界各地の食品・飲料・原料を日本市場へ届けています。<br>
             海外メーカーとの直接取引を通じ、
             商品選定から条件調整、品質・表示・法令確認、
             輸入通関、在庫・物流の最適化まで、
-            安心・透明性を重視した輸入体制を構築します。<br><br>
+            安心・透明性を重視した輸入体制を構築します。<br>
           </p>
           <p class="business_subtitle">主な取り組み</p>
           <ul>
@@ -80,10 +80,10 @@
           <p class="business_subtitle">日本の強みと伝統・革新を、世界の市場へ。</p>
           <p class="business_lead">
             日本製の食品・日用品を中心に、
-            アジア・中東、欧米など海外市場へ展開しています。<br><br>
+            アジア・中東、欧米など海外市場へ展開しています。<br>
             現地ニーズを踏まえた商品提案から、ラベル・仕様のローカライズ、
             海外パートナーとの協業による販路開拓まで、
-            長期的な市場定着を見据えた輸出を支援します。<br><br>
+            長期的な市場定着を見据えた輸出を支援します。<br>
           </p>
           <p class="business_subtitle">主な取り組み</p>
           <ul>
@@ -102,9 +102,9 @@
             試食会やキャンペーンなどの店頭施策、
             売場レイアウト・陳列提案、
             SNSやデジタルを活用した情報発信を通じて、
-            販売の現場を支援します。<br><br>
+            販売の現場を支援します。<br>
             販売データをもとにした改善提案を行い、
-            取引先とともに、持続的な事業成長を目指します。<br><br>
+            取引先とともに、持続的な事業成長を目指します。<br>
           </p>
           <p class="business_subtitle">主な取り組み</p>
           <ul>
@@ -299,7 +299,7 @@
             <h3>サプライチェーン設計・最適化</h3>
             <p>
               物流、在庫、輸送手段、リードタイム、コストのバランスを考慮し、
-              商流全体を見渡したサプライチェーンの設計・最適化を行います。<br><br>
+              商流全体を見渡したサプライチェーンの設計・最適化を行います。<br>
               安定供給と効率性の両立を図り、
               事業の継続性と競争力の向上を支えます。
             </p>
@@ -320,25 +320,12 @@
 
         <div class="value_support_item">
           <div class="value_support_content">
-            <div class="value_support_label">Business Design & Development</div>
-            <h3>事業設計・事業開発支援</h3>
-            <p>
-              商流・物流・販売チャネルを組み合わせ、
-              取引条件や市場特性に応じた事業スキームを設計します。<br><br>
-              新規市場や新たなチャネルへの展開を含め、
-              中長期的な視点で事業の成長と発展を支援します。
-            </p>
-          </div>
-        </div>
-
-        <div class="value_support_item">
-          <div class="value_support_content">
             <div class="value_support_label">Quality & Compliance</div>
             <h3>品質管理・法令対応</h3>
             <p>
               品質基準の確認、表示・法令のチェック、
               各国規制への対応などを通じて、
-              安心・安全な商品提供とリスク管理を支えます。<br><br>
+              安心・安全な商品提供とリスク管理を支えます。<br>
               透明性の高い体制構築により、
               取引先との信頼関係を大切にしています。
             </p>
@@ -347,20 +334,17 @@
 
         <div class="value_support_item">
           <div class="value_support_content">
-            <div class="value_support_label">Capital & Strategic Alliance Support</div>
-            <h3>資本・アライアンス支援（投資・共創）</h3>
+            <div class="value_support_label">Business Design & Development</div>
+            <h3>事業設計・事業開発支援</h3>
             <p>
-              事業の成長段階や課題に応じて、
-              出資、株式の持ち合い、業務資本提携、M&A など、
-              資本面での関与を含めた支援を行います。<br><br>
-              金融的な投資を目的とするものではなく、
-              事業の実行と成長を前提とした事業投資を行います。<br><br>
-              事業運営に寄り添いながら、
-              事業価値の向上と中長期的な成長をともに目指します。
+              商流・物流・販売チャネルを組み合わせ、
+              取引条件や市場特性に応じた事業スキームを設計します。<br>
+              新規市場や新たなチャネルへの展開を含め、
+              中長期的な視点で事業の成長と発展を支援します。
             </p>
           </div>
         </div>
-
+        
         <div class="value_support_item">
           <div class="value_support_content">
             <div class="value_support_label">Business Renewal & Transformation Support</div>
@@ -369,9 +353,20 @@
               市場環境や事業構造の変化に直面する企業に対し、
               事業の再設計、サプライチェーンの見直し、
               パートナー連携や資本構成の最適化を通じて、
-              事業再生や次の成長フェーズへの移行を支援します。<br><br>
+              事業再生や次の成長フェーズへの移行を支援します。<br>
               既存の強みを活かしながら、
               持続可能な事業モデルへの転換を目指します。
+            </p>
+          </div>
+  
+        </div>
+        <div class="value_support_item">
+          <div class="value_support_content">
+            <div class="value_support_label">Capital & Strategic Alliance Support</div>
+            <h3>資本・アライアンス支援</h3>
+            <p>
+              成長段階や課題に応じ、出資・株式持ち合い・M&A など資本面での支援を行います。<br>
+              金融的な投資を目的とするものではなく、事業の実行と成長を前提とした事業投資として、事業運営に寄り添い、価値向上と中長期成長をともに目指します。
             </p>
           </div>
         </div>

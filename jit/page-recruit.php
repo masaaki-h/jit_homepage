@@ -55,19 +55,29 @@
             商品だけでなく「事業の形」そのものをつくっていく仕事です。
           </p>
           <p class="recruit_subtitle">具体的には：</p>
-          <ul>
-            <li>海外メーカーや海外/国内取引先との商談・条件調整</li>
-            <li>日本市場・海外市場に向けた商品・事業スキームの企画</li>
-            <li>輸入・輸出・三国間取引を含む商流設計</li>
-            <li>展示会やリサーチを通じた新規商材・新規市場の開拓</li>
-            <li>社内外の関係者（物流・事務・国内外パートナー）との連携</li>
-          </ul>
-          <p class="recruit_subtitle">このポジションの特徴</p>
-          <ul>
-            <li>「売る」だけでなく、どう広げ、どう育てるかまで考える</li>
-            <li>国籍や文化の異なる相手と協力し、事業を前に進める</li>
-            <li>経験や語学力を、事業づくりに活かせる環境</li>
-          </ul>
+          <div class="recruit_card_visible">
+            <ul class="recruit_card_list_preview">
+              <li>海外メーカーや海外/国内取引先との商談・条件調整</li>
+              <li>日本市場・海外市場に向けた商品・事業スキームの企画</li>
+            </ul>
+            <div class="recruit_card_fade" aria-hidden="true"></div>
+          </div>
+          <div class="recruit_card_accordion">
+            <div class="recruit_card_accordion_panel">
+              <ul>
+                <li>輸入・輸出・三国間取引を含む商流設計</li>
+                <li>展示会やリサーチを通じた新規商材・新規市場の開拓</li>
+                <li>社内外の関係者（物流・事務・国内外パートナー）との連携</li>
+              </ul>
+              <p class="recruit_subtitle">このポジションの特徴</p>
+              <ul>
+                <li>「売る」だけでなく、どう広げ、どう育てるかまで考える</li>
+                <li>国籍や文化の異なる相手と協力し、事業を前に進める</li>
+                <li>経験や語学力を、事業づくりに活かせる環境</li>
+              </ul>
+            </div>
+            <button type="button" class="recruit_card_more_btn" aria-expanded="false">続きを見る</button>
+          </div>
         </div>
 
         <!-- 海外営業 -->
@@ -83,19 +93,29 @@
             事業が円滑に進むための「土台」を支えるポジションです。
           </p>
           <p class="recruit_subtitle">具体的には：</p>
-          <ul>
-            <li>受発注管理、納期調整、在庫確認</li>
-            <li>輸入（国内販売含む）・輸出に関わる書類作成・チェック</li>
-            <li>海外取引先とのメール・オンラインでのやり取り</li>
-            <li>売上・仕入データの管理、社内共有</li>
-            <li>業務フローの改善や効率化の提案</li>
-          </ul>
-          <p class="recruit_subtitle">このポジションの特徴</p>
-          <ul>
-            <li>一つひとつの正確な仕事が、取引先からの信頼につながる</li>
-            <li>営業・物流・経理と連携し、事業全体を支える役割</li>
-            <li>事務職でありながら、事業の一部として関われる実感がある</li>
-          </ul>
+          <div class="recruit_card_visible">
+            <ul class="recruit_card_list_preview">
+              <li>受発注管理、納期調整、在庫確認</li>
+              <li>輸入（国内販売含む）・輸出に関わる書類作成・チェック</li>
+            </ul>
+            <div class="recruit_card_fade" aria-hidden="true"></div>
+          </div>
+          <div class="recruit_card_accordion">
+            <div class="recruit_card_accordion_panel">
+              <ul>
+                <li>海外取引先とのメール・オンラインでのやり取り</li>
+                <li>売上・仕入データの管理、社内共有</li>
+                <li>業務フローの改善や効率化の提案</li>
+              </ul>
+              <p class="recruit_subtitle">このポジションの特徴</p>
+              <ul>
+                <li>一つひとつの正確な仕事が、取引先からの信頼につながる</li>
+                <li>営業・物流・経理と連携し、事業全体を支える役割</li>
+                <li>事務職でありながら、事業の一部として関われる実感がある</li>
+              </ul>
+            </div>
+            <button type="button" class="recruit_card_more_btn" aria-expanded="false">続きを見る</button>
+          </div>
         </div>
 
         <!-- バックオフィス -->
@@ -111,19 +131,29 @@
             事業の健全性と次の成長を支えるポジションです。
           </p>
           <p class="recruit_subtitle">具体的には：</p>
-          <ul>
-            <li>売上・仕入・経費の管理、仕訳処理</li>
-            <li>請求書の発行、入金・支払管理</li>
-            <li>月次・年次決算のサポート</li>
-            <li>事業ごとの数字の整理・可視化</li>
-            <li>業務フローの改善やルール整備</li>
-          </ul>
-          <p class="recruit_subtitle">このポジションの特徴</p>
-          <ul>
-            <li>正確さが、新しい挑戦や事業拡大の土台になる</li>
-            <li>経営や現場に近い立場で数字を見ることができる</li>
-            <li>ルーティンだけでなく、改善提案も歓迎される環境</li>
-          </ul>
+          <div class="recruit_card_visible">
+            <ul class="recruit_card_list_preview">
+              <li>売上・仕入・経費の管理、仕訳処理</li>
+              <li>請求書の発行、入金・支払管理</li>
+            </ul>
+            <div class="recruit_card_fade" aria-hidden="true"></div>
+          </div>
+          <div class="recruit_card_accordion">
+            <div class="recruit_card_accordion_panel">
+              <ul>
+                <li>月次・年次決算のサポート</li>
+                <li>事業ごとの数字の整理・可視化</li>
+                <li>業務フローの改善やルール整備</li>
+              </ul>
+              <p class="recruit_subtitle">このポジションの特徴</p>
+              <ul>
+                <li>正確さが、新しい挑戦や事業拡大の土台になる</li>
+                <li>経営や現場に近い立場で数字を見ることができる</li>
+                <li>ルーティンだけでなく、改善提案も歓迎される環境</li>
+              </ul>
+            </div>
+            <button type="button" class="recruit_card_more_btn" aria-expanded="false">続きを見る</button>
+          </div>
         </div>
       </div>
     </section>

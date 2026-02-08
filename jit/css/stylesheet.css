@@ -104,8 +104,8 @@ header{
     cursor: pointer;
 }
 .header_logo img{
-    height: 100%;
-    padding: 1rem 0 1rem 3rem;
+    height: 80%;
+    padding: 1rem;
 }
 .header_logo a{
     font-weight: bold;
@@ -294,7 +294,7 @@ nav{
 }
 .trade_container{
     width: 100%;
-    height: 550px;
+    height: 400px;
     display: flex;
     background-image: url(../img/trade.jpg);
 }

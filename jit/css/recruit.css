@@ -119,6 +119,66 @@
   font-size: 1.2rem;
   margin-bottom: 0.35rem;
 }
+
+/* 募集カード：具体的には の続きはアコーディオン + フェードアウト */
+.recruit_card_visible {
+  position: relative;
+  max-height: 5.8em;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.recruit_card_list_preview {
+  margin-bottom: 0;
+}
+.recruit_card_fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.8em;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.92) 60%, #ffffff 100%);
+  pointer-events: none;
+}
+/* アコーディオン開いているときはフェードを非表示 */
+.recruit_card.is-open .recruit_card_fade {
+  display: none;
+}
+.recruit_card_accordion {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.recruit_card_accordion_panel {
+  text-align: left;
+}
+.recruit_card_more_btn {
+  text-align: center;
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.4rem 1rem;
+  font-size: 1.15rem;
+  color: #005bac;
+  background: transparent;
+  border: 1px solid #005bac;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.recruit_card_more_btn:hover {
+  color: #fff;
+  background: #005bac;
+}
+.recruit_card_accordion_panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.55s ease;
+}
+.recruit_card_accordion.is-open .recruit_card_accordion_panel {
+  max-height: 500px;
+}
+.recruit_card_accordion.is-open .recruit_card_more_btn {
+  margin-top: 1rem;
+}
+
 .recruit_culture_section {
   padding: 3rem;
 }

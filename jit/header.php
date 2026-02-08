@@ -53,9 +53,9 @@
                 </div>
             </div>
             <div class="sp_header pc_none">
-                <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.webp"></a>
-                <a href="index.html" class="bold">JAPAN INTER TRADING</a>
-                <i class="fa-solid fa-bars"></i>
+                <a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.webp"></a>
+                <a href="<?php echo home_url('/'); ?>" class="bold">JAPAN INTER TRADING</a>
+                <i class="fa-solid fa-bars"></i>    
             </div>
         </header>
         <nav>

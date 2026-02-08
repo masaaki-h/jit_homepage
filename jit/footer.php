@@ -180,6 +180,23 @@
         });
         </script>
 
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.addEventListener("click", function(e) {
+                var btn = e.target && e.target.closest && e.target.closest(".recruit_card_more_btn");
+                if (!btn) return;
+                var accordion = btn.closest(".recruit_card_accordion");
+                if (!accordion) return;
+                e.preventDefault();
+                var isOpen = accordion.classList.toggle("is-open");
+                var card = accordion.closest(".recruit_card");
+                if (card) card.classList.toggle("is-open", isOpen);
+                btn.setAttribute("aria-expanded", isOpen);
+                btn.textContent = isOpen ? "閉じる" : "続きを見る";
+            });
+        });
+        </script>
+
         <script src="<?php echo get_template_directory_uri(); ?>/js/common.js" defer></script>
         <?php wp_footer(); ?>
     </body>

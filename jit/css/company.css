@@ -215,13 +215,17 @@
     box-shadow: 0 6px 14px rgba(0,0,0,0.18);
 }
 
-/* 沿革 続きを見る */
+/* 沿革 続きを見る（開閉アニメーション） */
 .history_item_container .history_more_wrapper {
-    display: none;
-
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.55s ease-in-out;
+    /* 年月バッジ（left: -3.2rem, width: 6.4rem）が切れないよう左に余白 */
+    margin-left: -10rem;
+    padding-left: 10rem;
 }
 .history_item_container .history_more_wrapper.is-open {
-    display: block !important;
+    max-height: 3000px;
 }
 .history_more_btn_wrapper {
     text-align: center;
@@ -442,6 +446,11 @@
   .history_card {
     margin-left: 0;
     padding: 1.5rem 2rem;
+  }
+
+  .history_item_container .history_more_wrapper {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   /* ==========================
