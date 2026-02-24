@@ -73,11 +73,11 @@
             <label for="00NfS0000051BJV">お問い合わせ種別<span class="required">必須</span></label>
             <select id="00NfS0000051BJV" name="00NfS0000051BJV" title="お問い合わせ種別" required>
               <option value="">選択してください</option>
-              <option value="商品・仕入れに関するご相談（輸入）">商品・仕入れに関するご相談（輸入）</option>
-              <option value="日本製品の海外展開に関するご相談（輸出）">日本製品の海外展開に関するご相談（輸出）</option>
-              <option value="ODM・OEM に関するご相談">ODM・OEM に関するご相談</option>
-              <option value="採用に関するお問い合せ">採用に関するお問い合せ</option>
-              <option value="その他のお問い合せ">その他のお問い合せ</option>
+              <option value="import">商品・仕入れに関するご相談（輸入）</option>
+              <option value="export">日本製品の海外展開に関するご相談（輸出）</option>
+              <option value="odm">ODM・OEM に関するご相談</option>
+              <option value="recruitment">採用に関するお問い合せ</option>
+              <option value="other">その他のお問い合せ</option>
             </select>
           </div>
           <div class="form_row">
