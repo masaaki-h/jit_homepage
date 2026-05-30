@@ -259,7 +259,7 @@
           「まずは話を聞いてみたい」「応募を検討したい」という方は、<br>
           下記のボタンよりお問い合わせフォームへお進みください。
         </p>
-        <a href="contact.html" class="recruit_cta_button hover_two">採用に関するお問い合わせ</a>
+        <a href="<?php echo home_url('/contact'); ?>" class="recruit_cta_button hover_two">採用に関するお問い合わせ</a>
         <p class="recruit_cta_note">
           ※ポジションごとの詳細な募集要項は、順次本ページに掲載予定です。
         </p>

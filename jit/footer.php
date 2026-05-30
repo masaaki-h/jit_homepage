@@ -52,9 +52,8 @@
                 <li class="sp_none">　</li>
             </ul>
         </div>
-        <div class="copy"><p>Copyright © 2022 JAPAN INTER TRADING CO., LTD. All Rights Reserved.</p></div>
+        <div class="copy"><p>Copyright © JAPAN INTER TRADING CO., LTD. All Rights Reserved.</p></div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <?php if (is_post_type_archive('product')) : ?>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -197,7 +196,6 @@
         });
         </script>
 
-        <script src="<?php echo get_template_directory_uri(); ?>/js/common.js" defer></script>
         <?php wp_footer(); ?>
     </body>
 </html>

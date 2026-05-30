@@ -43,10 +43,12 @@ add_action('wp_enqueue_scripts', function () {
   }
 
   // JS
+  wp_enqueue_script('jquery');
+
   wp_enqueue_script(
     'jit-common',
     $base . '/js/common.js',
-    [],
+    ['jquery'],
     null,
     true
   );
@@ -55,6 +57,46 @@ add_action('wp_enqueue_scripts', function () {
 // テーマサポート：アイキャッチ画像を有効化
 add_action('after_setup_theme', function () {
   add_theme_support('post-thumbnails');
+  add_theme_support('title-tag');
+});
+
+add_filter('document_title_parts', function ($parts) {
+  if (is_front_page() || is_home()) {
+    $parts['title'] = 'トップ';
+    return $parts;
+  }
+
+  if (is_page(['company', '会社概要'])) {
+    $parts['title'] = '会社概要';
+    return $parts;
+  }
+
+  if (is_page(['business', '事業内容'])) {
+    $parts['title'] = '事業内容';
+    return $parts;
+  }
+
+  if (is_page(['recruit', '採用情報'])) {
+    $parts['title'] = '採用情報';
+    return $parts;
+  }
+
+  if (is_page(['contact', 'お問い合わせ'])) {
+    $parts['title'] = 'お問い合わせ';
+    return $parts;
+  }
+
+  if (is_post_type_archive('news')) {
+    $parts['title'] = 'ニュース';
+    return $parts;
+  }
+
+  if (is_post_type_archive('product')) {
+    $parts['title'] = '商品一覧';
+    return $parts;
+  }
+
+  return $parts;
 });
 
 add_action('init', function () {
