@@ -343,7 +343,6 @@
   /* ---------- 共通 ---------- */
   .top_title_container {
     width: 90%;
-    padding-top: 3rem;
     margin-bottom: 2rem;
   }
   .title_container{
@@ -366,6 +365,7 @@
   .profile_card {
     padding: 1.8rem 1.8rem 2rem;
     color: #111;
+    width: 80%;
   }
 
   .profile_card table {
@@ -392,7 +392,7 @@
      ========================== */
   .philosophy_container {
     height: auto;
-    padding: 8rem 5% 2rem;
+    padding: 0rem 5% 2rem;
   }
 
   .philosophy_card_container {

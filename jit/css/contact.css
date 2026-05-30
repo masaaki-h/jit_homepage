@@ -132,6 +132,7 @@
 
 .form_col {
   flex: 1;
+  min-width: 0;
 }
 
 .form_row label {
@@ -157,6 +158,7 @@
 .contact_form select,
 .contact_form textarea {
   width: 100%;
+  box-sizing: border-box;
   padding: 1.2rem 1.4rem;
   font-size: 1.4rem;
   border-radius: 0.7rem;
@@ -168,6 +170,7 @@
   height: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  min-width: 0;
 }
 
 .contact_form input:focus,
@@ -287,6 +290,10 @@
     padding: 1rem 1.2rem;
     font-size: 1.3rem;
   }
+  .contact_form select {
+    width: 100%;
+    display: block;
+  }
   .contact_form textarea {
     min-height: 10rem;
   }
@@ -331,7 +338,6 @@
   }
 
   .contact_info_box {
-    width: 100%;
     min-width: auto;
     padding: 1.6rem 1.4rem;
   }
