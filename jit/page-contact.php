@@ -94,10 +94,14 @@
               当社のプライバシーポリシーに基づき適切に管理いたします。
             </p>
           </div>
+          <div class="form_row">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAACxYwqfh_4HqfmHU"></div>
+          </div>
           <div class="form_row form_row_submit">
             <button type="submit" class="contact_submit_button">送信する</button>
           </div>
         </form>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
       </div>
     </section>
     <section class="contact_info_section fadein">

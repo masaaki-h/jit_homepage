@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const $ = window.jQuery;
   const header = document.querySelector("header");
   if (header) {
     window.addEventListener("scroll", () => {
