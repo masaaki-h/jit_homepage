@@ -7,7 +7,7 @@
            <div class="top_container_logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/tenlogo.png" class="hover_two">
            </div>
-           <p class="top_main_text hover_two">人と思いが、世界へと巡る</p>
+           <p class="top_main_text hover_two">人と想いが、世界を巡る</p>
         </div>
         <div class="message_container fadein">
             <h2>日本と世界の価値を重ね、次のスタンダードへ</h2>
